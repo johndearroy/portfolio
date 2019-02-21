@@ -1,0 +1,20 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+  z-index: 999;
+}
+
+#status {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-25%, -25%);
+}
+
+
+svg{font-weight:bold;max-width:600px;height:auto;}
