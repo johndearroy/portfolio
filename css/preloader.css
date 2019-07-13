@@ -5,6 +5,12 @@
   font-weight: 300;
   src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
 }
+#preloader-div {
+    background: #4a9aca;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+}
 .loading {
   position: absolute;
   left: 50%;
