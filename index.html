@@ -451,6 +451,13 @@
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+	$(document).ready(function() {
+	      alert("document ready occurred!");
+	});
+
+	$(window).load(function() {
+	      alert("window load occurred!");
+	});
 	$(window).load(function() {
 		// will first fade out the loading animation
 		alert("Hi");
