@@ -27,30 +27,32 @@
 </head>
 <body>
 <!--// Preloader //-->
-<div class="loading">
-  <div class="finger finger-1">
-    <div class="finger-item">
-      <span></span><i></i>
-    </div>
-</div>
-<div class="finger finger-2">
-    <div class="finger-item">
-      <span></span><i></i>
-    </div>
-</div>
-<div class="finger finger-3">
-    <div class="finger-item">
-      <span></span><i></i>
-    </div>
-</div>
-<div class="finger finger-4">
-    <div class="finger-item">
-      <span></span><i></i>
-    </div>
-</div>
-<div class="last-finger">
-    <div class="last-finger-item"><i></i></div>
-</div>
+<div id="preloader-div">
+	<div class="loading" id="loading">
+	  <div class="finger finger-1">
+	    <div class="finger-item">
+	      <span></span><i></i>
+	    </div>
+	</div>
+	<div class="finger finger-2">
+	    <div class="finger-item">
+	      <span></span><i></i>
+	    </div>
+	</div>
+	<div class="finger finger-3">
+	    <div class="finger-item">
+	      <span></span><i></i>
+	    </div>
+	</div>
+	<div class="finger finger-4">
+	    <div class="finger-item">
+	      <span></span><i></i>
+	    </div>
+	</div>
+	<div class="last-finger">
+	    <div class="last-finger-item"><i></i></div>
+	</div>
+	</div>
 </div>
 <!--// Preloader //-->
 
@@ -448,5 +450,13 @@
 	 <!-- //contact -->
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	jQuery(window).load(function() {
+		// will first fade out the loading animation
+		jQuery("#loading").fadeOut();
+		// will fade out the whole DIV that covers the website.
+		jQuery("#preloader-div").delay(1000).fadeOut("slow");
+	})
+</script>
 </body>
 </html>
