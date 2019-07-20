@@ -235,7 +235,8 @@ li > a:only-child:after {
 	margin: 25px;
 	transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    min-height: 248px;
 }
 
 .myCard .card-body {
@@ -425,7 +426,8 @@ li > a:only-child:after {
 	z-index: 1;
 	top: 0;
 	right: 0;
-	background: #4a9aca;
+	background: rgb(74,154,202);
+	background: linear-gradient(135deg, rgba(74,154,202,1) 0%, rgba(162,57,214,1) 100%);
 	overflow-x: hidden;
 	padding-top: 20px;
 }
@@ -545,12 +547,24 @@ ul.list-unstyled li {
     color: #fff;
 }
 .services li span {
-    background:#4a9aca;
+    background: rgb(74,154,202);
+    background: linear-gradient(135deg, rgba(74,154,202,1) 0%, rgba(162,57,214,1) 100%);
     width: 40px;
     height: 40px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
+}
+.services li:hover span {
+    animation: service-hover 1s;
+}
+@keyframes service-hover {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 172, 108, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 0 45px rgba(0, 172, 108, 0);
+    }
 }
 .news {
     padding: 5em 12em;
