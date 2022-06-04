@@ -100,16 +100,6 @@
   }
 
   /**
-   * Set random profile pictures
-   */
-  let setProfileImage = () => {
-    const images = ['profile-1.png', 'profile-2.png'];
-    const image = images[Math.floor(Math.random() * images.length)];
-    const profileImage = document.getElementById("profileImage");
-    profileImage.src = `assets/img/${image}`;
-  }
-
-  /**
    * Set random hero images
    */
   let setHeroImage = () => {
@@ -129,8 +119,7 @@
     });
     // Calculate and set my current age
     document.getElementById("getAge").innerText = getDateDifferenceFromNow(new Date(1993,10,5)).toString();
-    generateSkills();
-    setProfileImage();
+    //generateSkills();
   });
 
   /**
