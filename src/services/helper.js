@@ -25,7 +25,24 @@ export const generateRandomGradient = () => {
   return `linear-gradient(${angle}deg, ${colorOne}, ${colorTwo}, ${colorThree})`;
 }
 
+/**
+ * Image URL helper
+ */
+export const resolveImagePathUrl = (image) => {
+  if (typeof image === 'object' && image !== null) {
+    return image.url ? image.url : require(`../images/portfolio/${image.path}`);
+  } else {
+    if (image && (image.indexOf("http://") === 0 || image.indexOf("https://") === 0)) {
+      return image;
+    }
+    else{
+      return require(`../images/portfolio/${image}`);
+    }
+  }
+}
+
 export default {
   randomColor,
-  generateRandomGradient
+  generateRandomGradient,
+  resolveImagePathUrl
 }

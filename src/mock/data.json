@@ -1,0 +1,165 @@
+{
+  "name" : "Dear Roy",
+  "designation" : "Software Engineer",
+  "dateOfBirth" : "5 Oct, 1993",
+  "sex" : "Male",
+  "maritalStatus" : "Single",
+  "city" : "Dhaka, Bangladesh",
+  "age" : "29",
+  "nationality" : "Bangladeshi",
+  "language" : "English, Bengali",
+  "lastDegree" : "Bachelor",
+  "phone" : "+880 1722 413010",
+  "email" : "royatrangpur@gmail.com",
+  "website" : "www.roy.ueepinc.com",
+  "freelanceStatus" : "Available",
+  "address" : "Mirpur, Dhaka, Bangladesh",
+  "summary" : "A versatile Full Stack Developer with seven (7) years of proven professional experience",
+  "about": "“I'm an experienced software engineer who constantly seeks out innovative solutions to everyday problems. In my seven years in this industry, I've honed my analytical thinking and collaboration skills, and I love working with a team. I've also had the opportunity to serve as the software engineer lead for three years with a lot of tech enthusist peoples.\n\nMy commitment to critical thinking and attention to detail have gotten me to where I am today as a senior software engineer. I have a passion for processes, and I'm an experienced team leader who typically manages 10 developers at any given time.\n\n“Prior to my senior role, I worked as a software engineer as well as a full stack developer for web and mobile. Because I've already held all the other positions in this field, I have keen insight into what it takes to run a successful project. My career goal is to move into management as a CTO, and I know this role would help me hone my leadership skills.”",
+  "heroImages": [
+    "1.png", "2.png", "3.png", "4.png", "5.png", "6.png"
+  ],
+  "profilePictures": [
+    "profile-1.png", "profile-2.png"
+  ],
+  "social": [
+    {"icon":  "bxl-twitter", "className": "twitter", "link":  "https://twitter.com/RoyRangpur"},
+    {"icon":  "bxl-facebook", "className": "facebook", "link":  "https://www.facebook.com/lord.of.misfortune"},
+    {"icon":  "bxl-instagram", "className": "instagram", "link":  "https://www.instagram.com/dear_roy_john/?hl=en"},
+    {"icon":  "bxl-skype", "className": "skype", "link":  "https://join.skype.com/invite/lqqEKKyJRWPx"},
+    {"icon":  "bxl-linkedin", "className": "linkedin", "link":  "https://www.linkedin.com/in/johndearroy/"}
+  ],
+  "skills": [
+    {"name": "html", "value": 100, "color": "blue"},
+    {"name": "css", "value": 95, "color": "red"},
+    {"name": "javascript", "value": 80, "color": "green"},
+    {"name": "php", "value": 85, "color": "yellow"},
+    {"name": "dart", "value": 45, "color": "pink"},
+    {"name": "mysql", "value": 60, "color": "purple"},
+    {"name": "mongodb", "value": 60, "color": "red"},
+    {"name": "graphql", "value": 60, "color": "teal"},
+    {"name": "laravel", "value": 90, "color": "orange"},
+    {"name": "symfony", "value": 80, "color": "gray"},
+    {"name": "cakephp", "value": 50, "color": "red"},
+    {"name": "react", "value": 85, "color": "red"},
+    {"name": "react native", "value": 85, "color": "red"},
+    {"name": "nextjs", "value": 80, "color": "red"},
+    {"name": "vuejs", "value": 90, "color": "red"},
+    {"name": "nodejs", "value": 70, "color": "red"},
+    {"name": "expressjs", "value": 85, "color": "red"},
+    {"name": "flutter", "value": 75, "color": "red"},
+    {"name": "bootstrap", "value": 100, "color": "red"},
+    {"name": "tailwindcss", "value": 100, "color": "red"},
+    {"name": "aws", "value": 60, "color": "red"},
+    {"name": "ci/cd", "value": 45, "color": "red"},
+    {"name": "test driven development", "value": 60, "color": "red"}
+  ],
+  "clients": [
+    {
+      "name": "UNICEF",
+      "link": "https://www.unicef.org/"
+    },
+    {
+      "name": "ICT Ministry of Bangladesh",
+      "link": "https://ictd.gov.bd/"
+    },
+    {
+      "name": "UNESCO",
+      "link": "https://www.unesco.org/en"
+    },
+    {
+      "name": "MOWCA",
+      "link": "http://www.mowca.gov.bd/"
+    },
+    {
+      "name": "Robi Axiata",
+      "link": "https://www.robi.com.bd/en"
+    },
+    {
+      "name": "Unite Living AS",
+      "link": "https://uniteliving.com/"
+    }
+  ],
+  "facts": [
+    {"label":  "Happy Clients", "value":  36},
+    {"label":  "Projects", "value":  27},
+    {"label":  "Working Hour/Day", "value":  8},
+    {"label":  "Awards", "value":  3}
+  ],
+  "services": {
+    "description": "A service business is one in which the perceived value of the offering to the buyer is determined largely by the services provided to him than the products offered. I used to give my respected clients kind of the tangible services where both the goods and services are provided to the customer, like restaurants and supermarkets, also come under the purview of the services marketing they sale you goods along with their great service.",
+    "services": [
+      {
+        "name": "Web Development",
+        "icon": "bx-code-alt",
+        "color": "blue",
+        "text": "You will get both Frontend and Backend service with both PHP and JavaScript as well as NodeJs."
+      },
+      {
+        "name": "Android App Development",
+        "icon": "bxl-android",
+        "color": "pink",
+        "text": "For Android application development you will get service for both Flutter and React Native."
+      },
+      {
+        "name": "iOS App Development",
+        "icon": "bxl-apple",
+        "color": "orange",
+        "text": "For iOS application development you will get service for both Flutter and React Native."
+      }
+    ]
+  },
+  "portfolio": {
+    "description": "Portfolios are a great way to demonstrate the competencies you would list on a resume or talk about\n              in an interview — they allow you to show and not just tell. During a job search, the portfolio\n              showcases your work to potential employers. It presents evidence of your relevant skills and\n              abilities. That's why i listed some of my previous works below as portfolio and some i can not due\n              to privacy issues of client and/or company.",
+    "filters": [
+      {"label":  "App", "modifier":  ".filter-app"},
+      {"label":  "Web", "modifier":  ".filter-web"},
+      {"label":  "Others", "modifier":  ".filter-card"}
+    ],
+    "projects": [
+      {
+        "name": "React smart loader",
+        "category": "Web",
+        "client": "UNICEF",
+        "deliveryDate": "01 March, 2020",
+        "image": {
+          "path": "portfolio-1.jpg",
+          "url": "https://i.ibb.co/L6GcCh1/ueep-smart-loading-1.png"
+        },
+        "link": "https://www.npmjs.com/package/@ueep/smart-loading",
+        "images": []
+      },
+      {
+        "name": "QStatus",
+        "category": "App",
+        "client": "UNICEF",
+        "deliveryDate":  "01 March, 2020",
+        "image": {
+          "path": "",
+          "url": "https://ueepinc.com/images/portfolio/full/QStatus%20-%20Cover.png"
+        },
+        "link":  "https://play.google.com/store/apps/details?id=com.ueep.qstatus",
+        "images":  [
+          "https://play-lh.googleusercontent.com/9Qp6HPEn5UV012esDHE-FAttPOE5vUNKrV6xegZ-_6tLaH1jeJ_M82CbQg1qIM-8Vdg=w2560-h1440-rw",
+          "https://play-lh.googleusercontent.com/6bnjB11XBeABvJEK2CiMaaLY49-2sLPDkxufSRfCIRRE-Gf79Ld_Lhl80rB1aVuBneQ=w2560-h1440-rw",
+          "https://play-lh.googleusercontent.com/HT0ltNBuf0l8yt_cG3gxaQTfLRqJTLmgHHLSs4F_zEYiSumnb58hrI_Ri0GIK4yjIA=w2560-h1440-rw",
+          "https://play-lh.googleusercontent.com/4VScBWJEHlc7mJvSnQJPw66kRXSUwevsc8tGm3Zwfk9xVMzECJAwZwLPjaQwybp2lVY=w2560-h1440-rw",
+          "https://play-lh.googleusercontent.com/ejJzK36ajeriOHqFeed8Q12wO9VRg1YzX_BeY5zD1Jwvyeca00bS4JAIntBqTGwhWmE=w2560-h1440-rw"
+        ]
+      },
+      {
+        "name": "PanchaBazar",
+        "category": "App",
+        "client": "UNICEF",
+        "deliveryDate":  "01 March, 2020",
+        "image": {
+          "path": "",
+          "url": "https://ueepinc.com/images/portfolio/full/panchabazar.jpg"
+        },
+        "link":  "https://play.google.com/store/apps/details?id=com.ueepinc.panchabazar",
+        "images":  [],
+        "description": "PanchaBazar is volunteer organization who is helping peoples to stay at home and they deliver thier daily goods at home without any cost. PanchaBazar a Mobile Application where you will get recent update's and you can order and buy your daily good's from here during the lockdown situation. Just open the app and you will find some hotline number(s) to order your goods. Apart from getting the update's you can also make call to the emergency number(s) or helpline(s) to get any support from your local government as well."
+      }
+    ]
+  }
+}

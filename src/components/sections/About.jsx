@@ -1,9 +1,10 @@
+import data from "../../mock/data.json";
 const AboutSection = () => {
   /**
    * Set random profile pictures
    */
   const getProfileImage = () => {
-    const images = ['profile-1.png', 'profile-2.png'];
+    const images = data.profilePictures;
     return images[Math.floor(Math.random() * images.length)];
   }
 
@@ -35,7 +36,7 @@ const AboutSection = () => {
               <img src={require(`../../images/${getProfileImage()}`)} className="img-fluid" alt=""/>
             </div>
             <div className="col-lg-8 pt-4 pt-lg-0 content">
-              <h3>Software Engineer</h3>
+              <h3>{data.designation}</h3>
               <p className="fst-italic">
                 I am a full stack software developer and used to develop software's for both mobile and web. I
                 also have a good understanding on the UI/UX and have a great test about that.
@@ -46,32 +47,32 @@ const AboutSection = () => {
                     <li>
                       <i className="bi bi-chevron-right"/>
                       <strong>Birthday:</strong>
-                      <span>5 Oct 1993</span>
+                      <span>{data.dateOfBirth}</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"/>
                       <strong>Sex:</strong>
-                      <span>Male</span>
+                      <span>{data.sex}</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"/>
                       <strong>Website:</strong>
-                      <span>www.roy.ueepinc.com</span>
+                      <span>{data.website}</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"/>
                       <strong>Phone:</strong>
-                      <span>+880 1722 413010</span>
+                      <span>{data.phone}</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"/>
                       <strong>City:</strong>
-                      <span>Dhaka, Bangladesh</span>
+                      <span>{data.city}</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"/>
                       <strong>Nationality:</strong>
-                      <span>Bangladeshi</span>
+                      <span>{data.nationality}</span>
                     </li>
                   </ul>
                 </div>
@@ -85,34 +86,33 @@ const AboutSection = () => {
                     <li>
                       <i className="bi bi-chevron-right"/>
                       <strong>Marital status:</strong>
-                      <span>Single</span>
+                      <span>{data.maritalStatus}</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"/>
                       <strong>Degree:</strong>
-                      <span>Bachelor</span>
+                      <span>{data.lastDegree}</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"/>
                       <strong>Email:</strong>
-                      <span>royatrangpur@gmail.com</span>
+                      <span>{data.email}</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"/>
                       <strong>Freelance:</strong>
-                      <span>Available</span>
+                      <span>{data.freelanceStatus}</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"/>
                       <strong>Language:</strong>
-                      <span>English, Bengali</span>
+                      <span>{data.language}</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </>

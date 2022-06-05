@@ -16,7 +16,7 @@ const Content = () => {
       <ResumeSection/>
       <PortfolioSection/>
       <ServicesSection/>
-      <TestimonialsSection/>
+      {/*<TestimonialsSection/>*/}
       <ContactSection/>
     </>
   )

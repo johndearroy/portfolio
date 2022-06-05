@@ -112,7 +112,7 @@
    * Window on load
    */
   window.addEventListener('load', () => {
-    setHeroImage();
+    //setHeroImage();
     // Set all placeholders for year of experience I have
     [...document.getElementsByClassName("yearOfExperience")].map(item => {
       item.innerText = getDateDifferenceFromNow(careerStartsAt).toString();

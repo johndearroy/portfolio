@@ -13,7 +13,7 @@ function App() {
       <Hero/>
       <Content/>
       <Footer/>
-      {/*<Preloader/>*/}
+      <Preloader/>
       <BackToTopButton/>
     </>
   );

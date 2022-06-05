@@ -1,3 +1,4 @@
+import data from "../../mock/data.json";
 const ContactSection = () => {
   return (
     <>
@@ -13,23 +14,23 @@ const ContactSection = () => {
                 <div className="address">
                   <i className="bi bi-geo-alt"/>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>{data.address}</p>
                 </div>
                 <div className="email">
                   <i className="bi bi-envelope"/>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>{data.email}</p>
                 </div>
                 <div className="phone">
                   <i className="bi bi-phone"/>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
+                  <p>{data.phone}</p>
                 </div>
               </div>
             </div>
 
             <div className="col-lg-8 mt-5 mt-lg-0">
-              <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+              <form method="post" role="form" className="php-email-form">
                 <div className="row">
                   <div className="col-md-6 form-group">
                     <input
@@ -77,7 +78,7 @@ const ContactSection = () => {
                   <div className="sent-message">Your message has been sent. Thank you!</div>
                 </div>
                 <div className="text-center">
-                  <button type="submit">Send Message</button>
+                  <button onClick={() => alert('Not working!')} disabled={true} type="submit">Send Message</button>
                 </div>
               </form>
             </div>
