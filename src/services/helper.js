@@ -41,8 +41,8 @@ export const resolveImagePathUrl = (image) => {
   }
 }
 
-export default {
-  randomColor,
-  generateRandomGradient,
-  resolveImagePathUrl
-}
+// export default {
+//   randomColor,
+//   generateRandomGradient,
+//   resolveImagePathUrl
+// }
