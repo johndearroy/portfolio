@@ -54,10 +54,10 @@ const PortfolioSection = () => {
                     <p>{project.category}</p>
 
                     <div className="portfolio-links">
-                      <a href={resolveImagePathUrl(project.image)} target={'_blank'}>
+                      <a href={resolveImagePathUrl(project.image)}>
                         <i className="bx bx-fullscreen"/>
                       </a>
-                      {project.link && <a href={project.link} target={'_blank'}>
+                      {project.link && <a href={project.link}>
                         <i className="bx bx-link"/>
                       </a>}
                     </div>
