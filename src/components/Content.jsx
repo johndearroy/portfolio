@@ -4,7 +4,7 @@ import SkillsSection from "./sections/Skills";
 import ResumeSection from "./sections/Resume";
 import PortfolioSection from "./sections/Portfolio";
 import ServicesSection from "./sections/Services";
-import TestimonialsSection from "./sections/Testimonials";
+//import TestimonialsSection from "./sections/Testimonials";
 import ContactSection from "./sections/Contact";
 
 const Content = () => {

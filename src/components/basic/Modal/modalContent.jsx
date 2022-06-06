@@ -47,7 +47,7 @@ const ModalContent = ({project}) => {
                 <li><strong>Category</strong>: {project?.category}</li>
                 <li><strong>Client</strong>: {project?.client}</li>
                 <li><strong>Project date</strong>: {project?.deliveryDate}</li>
-                <li><strong>Project URL</strong>: <a href="#">{project?.link}</a></li>
+                <li><strong>Project URL</strong>: <a href={project?.link}>{project?.link}</a></li>
               </ul>
             </div>
             <div className="portfolio-description">
