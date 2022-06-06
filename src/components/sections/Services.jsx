@@ -26,7 +26,7 @@ const ServicesSection = () => {
                     </svg>
                     <i className={`bx ${service.icon}`} />
                   </div>
-                  <h4><a href="#">{service.name}</a></h4>
+                  <h4><a href="https://ueepinc.com/">{service.name}</a></h4>
                   <p>{service.text}</p>
                 </div>
               </div>
