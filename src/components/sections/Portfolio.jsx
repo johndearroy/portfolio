@@ -14,6 +14,12 @@ const PortfolioSection = () => {
     setSelectedProject(project);
   }
 
+  const prepareFilterClass = (categories) => {
+    let className = `col-lg-4 col-md-6 portfolio-item`;
+    categories.split(', ').map(category => className += ` filter-${category.toLowerCase()}`);
+    return className;
+  }
+
   return (
     <>
       {/*======= Portfolio Section =======*/}
@@ -38,7 +44,12 @@ const PortfolioSection = () => {
           <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
             {projects.map((project, index) => (
-              <div ref={portfolioRef} key={index} className={`col-lg-4 col-md-6 portfolio-item filter-${project.category.toLowerCase()}`}>
+              /*<div ref={portfolioRef} key={index} className={`col-lg-4 col-md-6 portfolio-item filter-${project.category.toLowerCase()}`}>*/
+              <div
+                ref={portfolioRef}
+                key={index}
+                className={prepareFilterClass(project.category)}
+              >
 
                 <div className="portfolio-wrap">
 

@@ -11,16 +11,16 @@ const ModalContent = ({project}) => {
 
           <div className="col-lg-8">
             <div className="portfolio-details-slider swiper">
-              <div className="swiper-wrapper align-items-center">
+              <div style={{ maxHeight: '70vh' }} className="swiper-wrapper align-items-center">
 
                 <Swiper
                   spaceBetween={50}
-                  slidesPerView={project && project?.images.length > 0 ? 3 : 1}
+                  slidesPerView={project && project?.images.length > 1 ? 1 : 1}
                 >
                   {project && project?.images.length > 0 && project.images.map((image, index) => (
                     <SwiperSlide key={index}>
-                      <div className="swiper-slide">
-                        <img className={'w-100'} src={resolveImagePathUrl(image)} alt={`${project.name}-images-${index}}`} />
+                      <div className="swiper-slide" style={{ maxHeight: '70vh', width: '100%' }}>
+                        <img style={{ height: '70vh', width: 'auto' }} src={resolveImagePathUrl(image)} alt={`${project.name}-images-${index}}`} />
                       </div>
                     </SwiperSlide>
                   ))}
@@ -28,7 +28,7 @@ const ModalContent = ({project}) => {
                   {project && project?.images.length === 0 && project.image &&
                     <SwiperSlide>
                       <div className="swiper-slide">
-                        <img className={'w-100'} src={project.image.url ?? project.image.path} alt={project.name} />
+                        <img src={project.image.url ?? project.image.path} alt={project.name} />
                       </div>
                     </SwiperSlide>
                   }

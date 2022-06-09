@@ -15,7 +15,7 @@ const Modal = ({project, setShow}) => {
     >
       <>
         <button
-          className={'btn btn-warning rounded-circle position-fixed'}
+          className={'modal-close-button btn btn-warning rounded-circle position-fixed d-none d-lg-block'}
           style={{
             top: '50%',
             right: 80,

@@ -109,14 +109,234 @@
       }
     ]
   },
+  "resume": {
+    "description": "A transparent and good resume details your skills and training, work experience, and education, and,\n              most importantly, the accomplishments you have made with past employers. It should also inform the\n              employer of your career objective and communicate in a concise manner the benefits you will bring to\n              the job if hired. That's why i have tried my best to make it clear and well described.",
+    "exams": [
+      {
+        "name": "Bachelor of Science",
+        "university": "Rangpur Govt College, Rangpur",
+        "year": "2017",
+        "subject": "Mathematics",
+        "result": "CGPA 2.75",
+        "remarks": "N/A"
+      },
+      {
+        "name": "Higher Secondary Certificate",
+        "university": "Debiganj Govt College, Debiganj",
+        "year": "2011",
+        "subject": "Science",
+        "result": "GPA 4.40",
+        "remarks": "N/A"
+      },
+      {
+        "name": "Secondary School Certificate",
+        "university": "Nipendra Narayan Govt High School, Debiganj",
+        "year": "2009",
+        "subject": "Science",
+        "result": "GPA 5.00",
+        "remarks": "N/A"
+      }
+    ],
+    "experiences": [
+      {
+        "role": "Software Engineer",
+        "duration": "June, 2021 - Present",
+        "company": {
+          "name": "Binate Solutions",
+          "link": "https://www.binate-solutions.com/"
+        },
+        "remark": "My main responsibility here is to work on both Frontend and Backend technologies, analyze project requirements, system design and client handling. Currently working on both PHP and NodeJs eco-system."
+      },
+      {
+        "role": "Sr. Software Engineer",
+        "duration": "February, 2020 - March 2021",
+        "company": {
+          "name": "Gain Solutions",
+          "link": "https://www.gain.solutions/"
+        },
+        "remark": "I was responsible to lead both Laravel and NodeJs team, client handling and requirement analysis, full stack development etc."
+      },
+      {
+        "role": "Project Manager and Team Lead",
+        "duration": "November, 2018 - February, 2020",
+        "company": {
+          "name": "Rise Up Labs",
+          "link": "https://www.riseuplabs.com/"
+        },
+        "remark": "I was responsible to lead the projects specially web based projects, requirement analysis, full stack development, ideation etc."
+      },
+      {
+        "role": "Quality Assurance Tester",
+        "duration": "July, 2017 - November, 2018",
+        "company": {
+          "name": "Rise Up Labs",
+          "link": "https://www.riseuplabs.com/"
+        },
+        "remark": ""
+      },
+      {
+        "role": "Full stack developer",
+        "duration": "May, 2014 - December, 2015",
+        "company": {
+          "name": "Backbone IT Ltd",
+          "link": "#"
+        },
+        "remark": "This was a contractual remote job before my graduation and i specially worked on WordPress."
+      }
+    ]
+  },
   "portfolio": {
     "description": "Portfolios are a great way to demonstrate the competencies you would list on a resume or talk about\n              in an interview — they allow you to show and not just tell. During a job search, the portfolio\n              showcases your work to potential employers. It presents evidence of your relevant skills and\n              abilities. That's why i listed some of my previous works below as portfolio and some i can not due\n              to privacy issues of client and/or company.",
     "filters": [
       {"label":  "App", "modifier":  ".filter-app"},
       {"label":  "Web", "modifier":  ".filter-web"},
-      {"label":  "Others", "modifier":  ".filter-card"}
+      {"label":  "Others", "modifier":  ".filter-others"}
     ],
     "projects": [
+      {
+        "name": "PipeX CRM",
+        "category": "Web",
+        "client": "Codecanyon",
+        "deliveryDate": "01 January, 2020",
+        "image": {
+          "path": "",
+          "url": "https://i.ibb.co/94zcn9X/pipex-1.png"
+        },
+        "link": "https://pipex.gainhq.com/",
+        "images": [
+          "https://i.ibb.co/94zcn9X/pipex-1.png",
+          "https://s3.envato.com/files/376085763/Dasboard%20-%20light.png",
+          "https://s3.envato.com/files/376085763/Dasboard-Dark.png",
+          "https://s3.envato.com/files/376085763/Deals%20Card%20view.png",
+          "https://s3.envato.com/files/376085763/Kanban%20view.png",
+          "https://s3.envato.com/files/376085763/Report.png",
+          "https://s3.envato.com/files/376085763/Settings.png",
+          "https://s3.envato.com/files/376085763/User%20&%20Roles.png",
+          "https://s3.envato.com/files/376085763/Calander.png"
+        ]
+      },
+      {
+        "name": "ReadyKit",
+        "category": "Web",
+        "client": "Codecanyon",
+        "deliveryDate": "15 November, 2019",
+        "image": {
+          "path": "",
+          "url": "https://i.ibb.co/R9Mkf4b/readykit-1.png"
+        },
+        "link": "https://readykit.gainhq.com/",
+        "images": [
+          "https://i.ibb.co/R9Mkf4b/readykit-1.png",
+          "https://s3.envato.com/files/305918468/readykit.png"
+        ]
+      },
+      {
+        "name": "Digital Bondhu",
+        "category": "Web, App",
+        "client": "Codecanyon",
+        "deliveryDate": "15 November, 2019",
+        "image": {
+          "path": "",
+          "url": "https://i.ibb.co/QFZBD2S/digita-bondhu-2.png"
+        },
+        "link": "https://play.google.com/store/apps/details?id=com.riseuplabs.digitalbondhu",
+        "images": [
+          "https://i.ibb.co/MRB7wDr/digita-bondhu-1.png",
+          "https://i.ibb.co/QFZBD2S/digita-bondhu-2.png",
+          "https://play-lh.googleusercontent.com/3qfXqSxPix3T0IwjjG36B1kIwyrVdARxbC__jPymSrDYCXOAzT6_o51rp6bFougNXXs=w2560-h1440-rw",
+          "https://play-lh.googleusercontent.com/sDLEWx1qQrygcR15IJIXGBXRDUF0O2ZLrPzeJBfiVMFBc9TnjSbGguKWzrWwsQ-vts4R=w2560-h1440-rw"
+        ]
+      },
+      {
+        "name": "Treasure Wars",
+        "category": "Web, App",
+        "client": "Robi Axiata",
+        "deliveryDate": "30 March, 2018",
+        "image": {
+          "path": "",
+          "url": "https://play-lh.googleusercontent.com/Umy2p3PAGYK01UW5OTdQNTrSjvrfaluwrv4pGjj4X6Y0BwqaJGHj3zJSXvA_Bgo9BfM=w2560-h1440-rw"
+        },
+        "link": "https://play.google.com/store/apps/details?id=com.riseuplabs.treasurewars",
+        "images": [
+          "https://play-lh.googleusercontent.com/Umy2p3PAGYK01UW5OTdQNTrSjvrfaluwrv4pGjj4X6Y0BwqaJGHj3zJSXvA_Bgo9BfM=w2560-h1440-rw",
+          "https://play-lh.googleusercontent.com/aweM9L0IAv5OmuzUc_EdHJFSxrzHSyM8PtxQMTZoNJ38aPbRoi_AEKABRyDVDB46qVw=w2560-h1440-rw",
+          "https://play-lh.googleusercontent.com/ILbx2Sje9o4VBPbs8cSbdZ9AhR67_dr557jdZhmrezAPeNx21xsPfIPYaFVATP26wCE=w2560-h1440-rw",
+          "https://play-lh.googleusercontent.com/zdw8LpssgDq-DQomPVPEBwK_xunW9-kvkXsbp07Z7rhWik9eaG8_l-jTVisoSn3Y3_w=w2560-h1440-rw",
+          "https://play-lh.googleusercontent.com/yPxHbZm1QTuecAoiJqlZV2TUpwt7eTNj9aLNtDvu2r5lgbqnaRpYyE1YKnsKwG-PE64=w2560-h1440-rw",
+          "https://i.ibb.co/VHn9Gvn/treasure-wars-1.png",
+          "https://i.ibb.co/pWJy5kx/treasure-wars-2.png",
+          "https://i.ibb.co/BcvmGFM/treasure-wars-3.png"
+        ]
+      },
+      {
+        "name": "Adolescent",
+        "category": "Web, App",
+        "client": "UNICEF, MOWCA",
+        "deliveryDate": "30 March, 2018",
+        "image": {
+          "path": "",
+          "url": "https://i.ibb.co/YXqCtpB/adolescent-6.png"
+        },
+        "link": "https://play.google.com/store/apps/details?id=com.riseuplabs.adolescentapp",
+        "images": [
+          "https://i.ibb.co/JCZyfnR/adolescent-5.png",
+          "https://i.ibb.co/YXqCtpB/adolescent-6.png",
+          "https://i.ibb.co/XVfX4LD/adolescent-1.png",
+          "https://i.ibb.co/J73YyRQ/adolescent-2.png",
+          "https://i.ibb.co/6FqPRhc/adolescent-3.png",
+          "https://i.ibb.co/phrvgyF/adolescent-4.png",
+          "https://play-lh.googleusercontent.com/01BF5XzCc1MF1jIHPB1b34QNkoxX3IW-r2mcJ9bfo0b6OEbyWuoN1icVJ0QOy8UCQg=w2560-h1440-rw",
+          "https://play-lh.googleusercontent.com/mFVSrkUPuVk1gb3fd7q-156QsHwRO7zjMDOeB8KROIc-c_gHPlHEc7b72mU_WIkExPk=w2560-h1440-rw",
+          "https://play-lh.googleusercontent.com/Lf85vDfr-q13q5a_FgFP2hSAnwVb9qzqOZDJg24R9GiT7zNJV24aQqxMlbu8ZmN1jM4=w2560-h1440-rw",
+          "https://play-lh.googleusercontent.com/OSqwPH0bB5gHM7vq7VxRwiy94jzLS2ihSmU2JkxsRLe_aO_i70lT-SOWASGKN4r8AkYH=w2560-h1440-rw"
+        ]
+      },
+      {
+        "name": "Meena Media Award",
+        "category": "Web",
+        "client": "UNICEF",
+        "deliveryDate": "30 March, 2018",
+        "image": {
+          "path": "",
+          "url": "https://i.ibb.co/51FK1Bx/meena-media-3.png"
+        },
+        "link": "https://www.meenamedia.unicefbangladesh.org/",
+        "images": [
+          "https://i.ibb.co/TMqvHrL/meena-media-1.png",
+          "https://i.ibb.co/jM9yj30/meena-media-2.png",
+          "https://i.ibb.co/51FK1Bx/meena-media-3.png",
+          "https://i.ibb.co/NW7xmK0/meena-media-4.png"
+        ]
+      },
+      {
+        "name": "BDTodays",
+        "category": "Web",
+        "client": "DPRC",
+        "deliveryDate": "30 March, 2018",
+        "image": {
+          "path": "",
+          "url": "https://i.ibb.co/92PW0x6/bdtodays-1.png"
+        },
+        "link": "https://www.bdtodays.com/",
+        "images": [
+          "https://i.ibb.co/92PW0x6/bdtodays-1.png"
+        ]
+      },
+      {
+        "name": "Unite Living",
+        "category": "Web",
+        "client": "Unite Living AS",
+        "deliveryDate": "",
+        "image": {
+          "path": "",
+          "url": "https://i.ibb.co/1ntLZHw/unite-living.png"
+        },
+        "link": "https://uniteliving.com/",
+        "images": [
+          "https://i.ibb.co/1ntLZHw/unite-living.png",
+          "https://i.ibb.co/PzXCJrt/unite-living-2.png"
+        ]
+      },
       {
         "name": "React smart loader",
         "category": "Web",
@@ -124,10 +344,12 @@
         "deliveryDate": "01 March, 2020",
         "image": {
           "path": "portfolio-1.jpg",
-          "url": "https://i.ibb.co/L6GcCh1/ueep-smart-loading-1.png"
+          "url": "https://i.ibb.co/TBtyCKq/New-Project-2.png"
         },
         "link": "https://www.npmjs.com/package/@ueep/smart-loading",
-        "images": []
+        "images": [
+          "https://i.ibb.co/TBtyCKq/New-Project-2.png"
+        ]
       },
       {
         "name": "QStatus",
