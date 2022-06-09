@@ -30,12 +30,14 @@ export const generateRandomGradient = () => {
  */
 export const resolveImagePathUrl = (image) => {
   if (typeof image === 'object' && image !== null) {
+    // eslint-disable-next-line
     return image.url ? image.url : require(`../images/portfolio/${image.path}`);
   } else {
     if (image && (image.indexOf("http://") === 0 || image.indexOf("https://") === 0)) {
       return image;
     }
     else{
+      // eslint-disable-next-line
       return require(`../images/portfolio/${image}`);
     }
   }
