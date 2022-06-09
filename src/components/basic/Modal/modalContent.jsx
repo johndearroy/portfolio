@@ -1,4 +1,4 @@
-import {resolveImagePathUrl} from "../../../services/helper";
+//import {resolveImagePathUrl} from "../../../services/helper";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
@@ -30,7 +30,7 @@ const ModalContent = ({project}) => {
                   {project && project?.images.length > 0 && project.images.map((image, index) => (
                     <SwiperSlide key={index}>
                       <div className="swiper-slide" style={{ maxHeight: '70vh', width: '100%' }}>
-                        <img style={{ height: '70vh', width: 'auto' }} src={resolveImagePathUrl(image)} alt={`${project.name}-images-${index}}`} />
+                        <img style={{ height: '70vh', width: 'auto' }} src={image} alt={`${project.name}-images-${index}}`} />
                       </div>
                     </SwiperSlide>
                   ))}
