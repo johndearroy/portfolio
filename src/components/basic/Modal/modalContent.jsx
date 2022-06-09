@@ -1,6 +1,11 @@
 import {resolveImagePathUrl} from "../../../services/helper";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
 
 const ModalContent = ({project}) => {
   return (
@@ -16,6 +21,11 @@ const ModalContent = ({project}) => {
                 <Swiper
                   spaceBetween={50}
                   slidesPerView={project && project?.images.length > 1 ? 1 : 1}
+                  modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                  navigation
+                  autoplay={false}
+                  pagination={{ clickable: true }}
+                  scrollbar={{ draggable: true }}
                 >
                   {project && project?.images.length > 0 && project.images.map((image, index) => (
                     <SwiperSlide key={index}>
