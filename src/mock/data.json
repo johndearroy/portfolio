@@ -202,7 +202,8 @@
           "path": "",
           "url": "https://i.ibb.co/94zcn9X/pipex-1.png"
         },
-        "link": "https://pipex.gainhq.com/",
+        "links": ["https://pipex.gainhq.com/"],
+        "technologies": ["Laravel", "Vue"],
         "images": [
           "https://i.ibb.co/94zcn9X/pipex-1.png",
           "https://s3.envato.com/files/376085763/Dasboard%20-%20light.png",
@@ -224,7 +225,8 @@
           "path": "",
           "url": "https://i.ibb.co/R9Mkf4b/readykit-1.png"
         },
-        "link": "https://readykit.gainhq.com/",
+        "links": ["https://readykit.gainhq.com/"],
+        "technologies": ["HTML", "CSS", "Vue"],
         "images": [
           "https://i.ibb.co/R9Mkf4b/readykit-1.png",
           "https://s3.envato.com/files/305918468/readykit.png"
@@ -239,7 +241,8 @@
           "path": "",
           "url": "https://i.ibb.co/QFZBD2S/digita-bondhu-2.png"
         },
-        "link": "https://play.google.com/store/apps/details?id=com.riseuplabs.digitalbondhu",
+        "links": ["https://play.google.com/store/apps/details?id=com.riseuplabs.digitalbondhu"],
+        "technologies": ["Laravel", "Android", "MySQL"],
         "images": [
           "https://i.ibb.co/MRB7wDr/digita-bondhu-1.png",
           "https://i.ibb.co/QFZBD2S/digita-bondhu-2.png",
@@ -256,7 +259,8 @@
           "path": "",
           "url": "https://play-lh.googleusercontent.com/Umy2p3PAGYK01UW5OTdQNTrSjvrfaluwrv4pGjj4X6Y0BwqaJGHj3zJSXvA_Bgo9BfM=w2560-h1440-rw"
         },
-        "link": "https://play.google.com/store/apps/details?id=com.riseuplabs.treasurewars",
+        "links": ["https://play.google.com/store/apps/details?id=com.riseuplabs.treasurewars"],
+        "technologies": ["Laravel", "Unity3D", "Photon", "MySQL"],
         "images": [
           "https://play-lh.googleusercontent.com/Umy2p3PAGYK01UW5OTdQNTrSjvrfaluwrv4pGjj4X6Y0BwqaJGHj3zJSXvA_Bgo9BfM=w2560-h1440-rw",
           "https://play-lh.googleusercontent.com/aweM9L0IAv5OmuzUc_EdHJFSxrzHSyM8PtxQMTZoNJ38aPbRoi_AEKABRyDVDB46qVw=w2560-h1440-rw",
@@ -277,7 +281,8 @@
           "path": "",
           "url": "https://i.ibb.co/YXqCtpB/adolescent-6.png"
         },
-        "link": "https://play.google.com/store/apps/details?id=com.riseuplabs.adolescentapp",
+        "links": ["https://play.google.com/store/apps/details?id=com.riseuplabs.adolescentapp"],
+        "technologies": ["Laravel", "Android", "MySQL"],
         "images": [
           "https://i.ibb.co/JCZyfnR/adolescent-5.png",
           "https://i.ibb.co/YXqCtpB/adolescent-6.png",
@@ -300,7 +305,8 @@
           "path": "",
           "url": "https://i.ibb.co/51FK1Bx/meena-media-3.png"
         },
-        "link": "https://www.meenamedia.unicefbangladesh.org/",
+        "links": ["https://www.meenamedia.unicefbangladesh.org/"],
+        "technologies": ["Laravel", "React", "MySQL"],
         "images": [
           "https://i.ibb.co/TMqvHrL/meena-media-1.png",
           "https://i.ibb.co/jM9yj30/meena-media-2.png",
@@ -317,7 +323,8 @@
           "path": "",
           "url": "https://i.ibb.co/92PW0x6/bdtodays-1.png"
         },
-        "link": "https://www.bdtodays.com/",
+        "links": ["https://www.bdtodays.com/"],
+        "technologies": ["WordPress", "JQuery", "MySQL"],
         "images": [
           "https://i.ibb.co/92PW0x6/bdtodays-1.png"
         ]
@@ -331,7 +338,8 @@
           "path": "",
           "url": "https://i.ibb.co/1ntLZHw/unite-living.png"
         },
-        "link": "https://uniteliving.com/",
+        "links": ["https://uniteliving.com/"],
+        "technologies": ["MeteorJS", "Vue", "AWS", "MongoDB", "GraphQL", "Papertrail", "Puppeteer"],
         "images": [
           "https://i.ibb.co/1ntLZHw/unite-living.png",
           "https://i.ibb.co/PzXCJrt/unite-living-2.png"
@@ -346,7 +354,8 @@
           "path": "portfolio-1.jpg",
           "url": "https://i.ibb.co/TBtyCKq/New-Project-2.png"
         },
-        "link": "https://www.npmjs.com/package/@ueep/smart-loading",
+        "links": ["https://www.npmjs.com/package/@ueep/smart-loading"],
+        "technologies": ["React"],
         "images": [
           "https://i.ibb.co/TBtyCKq/New-Project-2.png"
         ]
@@ -360,7 +369,8 @@
           "path": "",
           "url": "https://ueepinc.com/images/portfolio/full/QStatus%20-%20Cover.png"
         },
-        "link":  "https://play.google.com/store/apps/details?id=com.ueep.qstatus",
+        "links":  ["https://play.google.com/store/apps/details?id=com.ueep.qstatus"],
+        "technologies": ["Flutter", "Dart"],
         "images":  [
           "https://play-lh.googleusercontent.com/9Qp6HPEn5UV012esDHE-FAttPOE5vUNKrV6xegZ-_6tLaH1jeJ_M82CbQg1qIM-8Vdg=w2560-h1440-rw",
           "https://play-lh.googleusercontent.com/6bnjB11XBeABvJEK2CiMaaLY49-2sLPDkxufSRfCIRRE-Gf79Ld_Lhl80rB1aVuBneQ=w2560-h1440-rw",
@@ -378,7 +388,8 @@
           "path": "",
           "url": "https://ueepinc.com/images/portfolio/full/panchabazar.jpg"
         },
-        "link":  "https://play.google.com/store/apps/details?id=com.ueepinc.panchabazar",
+        "links":  ["https://play.google.com/store/apps/details?id=com.ueepinc.panchabazar"],
+        "technologies": ["Flutter", "Dart"],
         "images":  [],
         "description": "PanchaBazar is volunteer organization who is helping peoples to stay at home and they deliver thier daily goods at home without any cost. PanchaBazar a Mobile Application where you will get recent update's and you can order and buy your daily good's from here during the lockdown situation. Just open the app and you will find some hotline number(s) to order your goods. Apart from getting the update's you can also make call to the emergency number(s) or helpline(s) to get any support from your local government as well."
       }

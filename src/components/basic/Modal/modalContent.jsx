@@ -1,4 +1,4 @@
-//import {resolveImagePathUrl} from "../../../services/helper";
+import {getRandomItemFromArray} from "../../../services/helper";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
@@ -8,6 +8,19 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 
 const ModalContent = ({project}) => {
+  const getBadgeVariant = () => {
+    return getRandomItemFromArray([
+      "bg-primary",
+      "bg-secondary",
+      "bg-success",
+      "bg-danger",
+      "bg-warning",
+      "bg-info",
+      "bg-info text-dark",
+      "bg-dark"
+    ]);
+  }
+
   return (
     <section id="portfolio-details" className="portfolio-details">
       <div className="container">
@@ -30,7 +43,7 @@ const ModalContent = ({project}) => {
                   {project && project?.images.length > 0 && project.images.map((image, index) => (
                     <SwiperSlide key={index}>
                       <div className="swiper-slide" style={{ maxHeight: '70vh', width: '100%' }}>
-                        <img style={{ height: '70vh', width: 'auto' }} src={image} alt={`${project.name}-images-${index}}`} />
+                        <img style={{ height: '70vh', width: '100%' }} src={image} alt={`${project.name}-images-${index}}`} />
                       </div>
                     </SwiperSlide>
                   ))}
@@ -57,9 +70,29 @@ const ModalContent = ({project}) => {
                 <li><strong>Category</strong>: {project?.category}</li>
                 <li><strong>Client</strong>: {project?.client}</li>
                 <li><strong>Project date</strong>: {project?.deliveryDate}</li>
-                <li><strong>Project URL</strong>: <a href={project?.link}>{project?.link}</a></li>
+                {project.links &&
+                  <li><strong>Project URL</strong>: <br/>
+                    {project.links.map((link, index) => <a key={index} href={link}>{link}</a>)}
+                  </li>
+                }
               </ul>
             </div>
+            {project.technologies &&
+              <div className="portfolio-info">
+                <h3>Technology used</h3>
+                {project.technologies && project.technologies.map((technology, index) => (
+                  <p key={index}
+                    style={ project.technologies.length !== index + 1 ? {marginRight: '10px'} : {} }
+                    className={`badge rounded-pill px-3 mr-5 mb-1 ${getBadgeVariant()}`}
+                  >
+                    {technology}
+                  </p>
+                ))}
+              </div>
+            }
+          </div>
+
+          <div className="col-lg-12">
             <div className="portfolio-description">
               <h2>Overview</h2>
               <p>

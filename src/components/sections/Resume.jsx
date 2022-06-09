@@ -37,8 +37,8 @@ const ResumeSection = () => {
 
               <h3 className="resume-title">Education</h3>
 
-              {data.resume?.exams.map(exam => (
-                <div className="resume-item">
+              {data.resume?.exams.map((exam, index) => (
+                <div key={index} className="resume-item">
                   {exam.name && <h4>{exam.name}</h4>}
                   {exam.subject && <h5>{exam.subject}</h5>}
                   {exam.year && <h5>{exam.year}</h5>}
@@ -51,8 +51,8 @@ const ResumeSection = () => {
             <div className="col-lg-6">
               <h3 className="resume-title">Professional Experience</h3>
 
-              {data.resume.experiences.map(experience => (
-                <div className="resume-item">
+              {data.resume.experiences.map((experience, index) => (
+                <div key={index} className="resume-item">
                   <h4>{experience.role}</h4>
                   {experience.company && <p className={'m-zero'}><a href={experience.company.link}>{experience.company.name}</a></p>}
                   {experience.duration && <h6>{experience.duration}</h6>}

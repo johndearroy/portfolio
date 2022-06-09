@@ -26,6 +26,13 @@ export const generateRandomGradient = () => {
 }
 
 /**
+ * Get random array item
+ */
+export const getRandomItemFromArray = (array) => {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+/**
  * Image URL helper
  */
 export const resolveImagePathUrl = (image) => {
