@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.35cc10f4.css",
+    "main.js": "/static/js/main.97ac3286.js",
+    "static/js/787.f6e65957.chunk.js": "/static/js/787.f6e65957.chunk.js",
+    "static/media/4.png": "/static/media/4.2ca9ddf65f88cfb69971.png",
+    "static/media/6.png": "/static/media/6.0109d83e33a0db459660.png",
+    "static/media/5.png": "/static/media/5.9917eac598100edf316d.png",
+    "static/media/3.png": "/static/media/3.84aedd90fda70e208c88.png",
+    "static/media/profile-1.png": "/static/media/profile-1.a5ec54e0bdb635415eed.png",
+    "static/media/2.png": "/static/media/2.df7e9872631e305d2702.png",
+    "static/media/profile-2.png": "/static/media/profile-2.5383d77c353c49aa1333.png",
+    "static/media/1.png": "/static/media/1.760f4b709fbc5db9a9c9.png",
+    "static/media/testimonials-2.jpg": "/static/media/testimonials-2.4b41e5c09698f7f4f9f9.jpg",
+    "static/media/testimonials-1.jpg": "/static/media/testimonials-1.54f2a70e2804cdf6f09d.jpg",
+    "static/media/testimonials-5.jpg": "/static/media/testimonials-5.8732aa377888dc5873fb.jpg",
+    "static/media/testimonials-4.jpg": "/static/media/testimonials-4.58081dc8c31bc0e1cb6c.jpg",
+    "static/media/testimonials-3.jpg": "/static/media/testimonials-3.bec51ce16f238c7ec7b1.jpg",
+    "index.html": "/index.html",
+    "main.35cc10f4.css.map": "/static/css/main.35cc10f4.css.map",
+    "main.97ac3286.js.map": "/static/js/main.97ac3286.js.map",
+    "787.f6e65957.chunk.js.map": "/static/js/787.f6e65957.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35cc10f4.css",
+    "static/js/main.97ac3286.js"
+  ]
+}
