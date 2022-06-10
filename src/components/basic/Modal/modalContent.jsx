@@ -96,7 +96,7 @@ const ModalContent = ({project}) => {
             <div className="portfolio-description">
               <h2>Overview</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                Project overview will be here soon!
               </p>
             </div>
           </div>
