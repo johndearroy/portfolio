@@ -60,7 +60,18 @@ code {
 }
 
 .modal-close-button {
+  top: 50%;
+  right: 80px;
+  width: 5rem;
+  height: 5rem;
+  transform: translateY(-50%);
+  z-index: 9;
   animation: 1s fadeIn ease-in-out;
+}
+
+.modal-close-button i {
+  line-height: 1.5;
+  color: white !important;
 }
 
 .pill {
@@ -86,11 +97,11 @@ code {
   }
   25% {
     opacity: 0;
-    right: 60;
+    right: 60px;
   }
   100% {
     opacity: 1;
-    right: 80;
+    right: 80px;
   }
 }
 
