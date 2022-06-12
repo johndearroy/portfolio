@@ -78,7 +78,7 @@ const ContactSection = () => {
                   <div className="sent-message">Your message has been sent. Thank you!</div>
                 </div>
                 <div className="text-center">
-                  <button onClick={() => alert('Not working!')} disabled={true} type="submit">Send Message</button>
+                  <button className={'button'} onClick={() => alert('Not working!')} disabled={true} type="submit">Send Message</button>
                 </div>
               </form>
             </div>
