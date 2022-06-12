@@ -16,13 +16,6 @@ const Modal = ({project, setShow}) => {
       <>
         <button
           className={'modal-close-button btn btn-warning rounded-circle position-fixed d-none d-lg-block'}
-          style={{
-            top: '50%',
-            right: 80,
-            width: '5rem',
-            height: '4rem',
-            transform: 'translateY(-50%)'
-          }}
           onClick={() => setShow(false)}
         >
           <i className="bx bx-x h1 pt-1 text-danger"/>
