@@ -1,27 +1,39 @@
 import SocialLinks from "../Social/links";
 import data from "../../../mock/data.json";
+import React from "react";
+import purpleSvg from '../../../images/hero/purple-svg.svg';
+import purpleSvg2 from '../../../images/hero/purple-svg-2.svg';
+import orangeSvg from '../../../images/hero/orange-svg.svg';
+import yellowBigSvg from '../../../images/hero/yellow-big-svg.svg';
+import dearPicture from '../../../images/hero/dear-roy-profile.png';
+import Nav from "./nav";
+import "./hero.css";
 
 const Hero = () => {
-  let setRandomHeroImage = () => {
-    const image = data.heroImages[Math.floor(
-        Math.random() * data.heroImages.length
-    )];
-    return `url(${require(`../../../images/hero/${image}`)}) no-repeat top right / cover`;
-  }
-
   return (
-    <>
-      {/*======= Hero Section =======*/}
-      <section style={{
-        background: setRandomHeroImage()
-      }} id="hero" className="d-flex flex-column justify-content-center">
-        <div className="container" data-aos="zoom-in" data-aos-delay="100">
-          <h1>{data?.name || "Dear Roy"}</h1>
-          <p>{data?.designation || "Software Engineer"}</p>
-          <SocialLinks/>
+    <div className={'container'}>
+      <Nav/>
+      <div className={'hero-wrapper row d-flex justify-content-center align-items-center'}>
+        <div className={'left col-lg-6'}>
+          <p>Hy! I Am</p>
+          <h1>{data.name}</h1>
+          <p>{data.designation}</p>
+          <SocialLinks className={'hero-social'}/>
         </div>
-      </section>
-    </>
+        <div className={'right d-none d-lg-block col-lg-6'}>
+          <img className={'hero-particles purple-1'} src={purpleSvg} alt={'purpleSvg'} />
+          <img className={'hero-particles purple-2'} src={purpleSvg2} alt={'purpleSvg2'} />
+          <img className={'hero-particles orange'} src={orangeSvg} alt={'orangeSvg'} />
+          <div className={'hero-profile-picture'}>
+            <img src={yellowBigSvg} alt={'yellowBigSvg'} />
+            <img className={'bg-blur'} src={yellowBigSvg} alt={'yellowBigSvg'} />
+            <img src={dearPicture} alt={'dear-roy-profile-picture'} />
+          </div>
+        </div>
+      </div>
+      <div className="blur-shadow shadow-1"/>
+      <div className="blur-shadow shadow-2"/>
+    </div>
   )
 }
 
