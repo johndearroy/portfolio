@@ -1,21 +1,25 @@
-import {generateRandomGradient} from '../../services/helper';
 import data from "../../mock/data.json";
+import VisibilitySensor from 'react-visibility-sensor';
 
 const {skills} = data;
 
 const ShowSkill = ({skill}) => {
-  const color = generateRandomGradient();
+  const color = 'var(--orange)';
   return (
     <div className="col-lg-6 progress">
       <span className="skill">{skill.name} <i className="val">{skill.value}%</i></span>
       <div className="progress-bar-wrap">
-        <div
-          style={{
-            background: color,
-            width: skill.value + '%'
-          }}
-          className="progress-bar"
-        />
+      <VisibilitySensor>
+        {({isVisible}) =>
+          <div
+            style={{
+              background: color,
+              width: isVisible ? skill.value + '%' : '1%'
+            }}
+            className="progress-bar"
+          />
+        }
+      </VisibilitySensor>
       </div>
     </div>
   )
