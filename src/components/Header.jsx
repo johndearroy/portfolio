@@ -1,4 +1,5 @@
 import React from "react";
+import Nav from "./basic/Hero/nav";
 
 const Header = () => {
   const [show, setShow] = React.useState(false);
@@ -11,7 +12,7 @@ const Header = () => {
   return (
     <>
       {/*======= Mobile nav toggle button =======*/}
-      <i onClick={toggle} className="bi bi-list mobile-nav-toggle d-xl-none"/>
+      <Nav toggle={toggle}/>
       {/*======= Header =======*/}
       <header id="header" className={`d-flex flex-column justify-content-center ${toggleClass}`}>
         <nav id="navbar" className="navbar nav-menu">

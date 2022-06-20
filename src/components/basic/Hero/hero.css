@@ -82,7 +82,7 @@
 
 .hero-wrapper .right .purple-1 {
     position: absolute;
-    top: 12%;
+    top: 15%;
     left: 40%
 }
 
@@ -137,7 +137,7 @@
 
 .shadow-2 {
     background: var(--purple);
-    top: 10%;
+    top: 23%;
     left: 40%;
 }
 
