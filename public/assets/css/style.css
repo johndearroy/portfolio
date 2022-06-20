@@ -3,7 +3,11 @@
 --------------------------------------------------------------*/
 body {
   font-family: 'Nunito', sans-serif;
-  color: #272829;
+  color: var(--black);
+  background: var(--background);
+  margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -143,6 +147,10 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Desktop Navigation
 */
+.nav {
+  background: var(--background);
+  z-index: 99;
+}
 .nav-menu {
   padding: 0;
   display: block;
@@ -206,9 +214,6 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  position: fixed;
-  right: 10px;
-  top: 10px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -218,7 +223,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
   cursor: pointer;
   border-radius: 50px;
-  padding: 5px;
 }
 .mobile-nav-toggle i {
   color: #45505b;
@@ -364,7 +368,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #0563bb;
+  color: var(--orange);
   line-height: 0;
 }
 .about .content p:last-child {
@@ -380,7 +384,6 @@ section {
   width: 100%;
   position: relative;
   text-align: center;
-  background: #fff;
 }
 .facts .count-box i {
   position: absolute;
@@ -474,6 +477,8 @@ section {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  border-radius: 8px;
+  margin-right: 5px;
 }
 .resume .resume-item ul {
   padding-left: 20px;
@@ -507,7 +512,6 @@ section {
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -519,7 +523,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: var(--black);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -695,7 +699,6 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
 }
 .services .icon-box .icon {
@@ -868,7 +871,6 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
 }
 .contact .info i {
   font-size: 20px;
@@ -905,7 +907,6 @@ section {
 }
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
 }
 .contact .php-email-form .form-group {
   padding-bottom: 8px;

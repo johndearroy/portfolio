@@ -1,4 +1,5 @@
 :root {
+    --background: #FFFFFF;
     --yellow: #F5C32C;
     --orange: #FCA61F;
     --black: #242D49;
@@ -39,12 +40,6 @@
         padding: 0.5rem 1rem;
 
     }
-}
-
-body {
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 p {
@@ -100,4 +95,8 @@ code {
         opacity: 1;
         right: 80px;
     }
+}
+
+.sweet-alert {
+    background: var(--background) !important;
 }

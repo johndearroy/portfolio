@@ -49,6 +49,10 @@ export const resolveImagePathUrl = (image) => {
   return image.url;
 }
 
+export const changeCssVariable = (property, color) => {
+  document.documentElement.style.setProperty(`--${property}`, color);
+}
+
 // export default {
 //   randomColor,
 //   generateRandomGradient,

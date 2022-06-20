@@ -6,13 +6,11 @@ import purpleSvg2 from '../../../images/hero/purple-svg-2.svg';
 import orangeSvg from '../../../images/hero/orange-svg.svg';
 import yellowBigSvg from '../../../images/hero/yellow-big-svg.svg';
 import dearPicture from '../../../images/hero/dear-roy-profile.png';
-import Nav from "./nav";
 import "./hero.css";
 
 const Hero = () => {
   return (
     <div className={'container'}>
-      <Nav/>
       <div className={'hero-wrapper row d-flex justify-content-center align-items-center'}>
         <div className={'left col-lg-6'}>
           <p>Hy! I Am</p>

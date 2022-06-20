@@ -1,11 +1,14 @@
 import Switch from "./switch";
 
-const Nav = () => {
+const Nav = ({toggle}) => {
   return (
     <div className={'row'}>
-      <div className={'nav col-8 col-lg-3 d-flex justify-content-between align-items-center pt-3'}>
-        <h3>Portfolio</h3>
-        {/* <Switch/> */}
+      <div className="container">
+        <div className={'nav col-12 col-lg-12 d-flex justify-content-between align-items-center position-fixed p-3'}>
+          <h3>Portfolio</h3>
+          <Switch/>
+          <i onClick={toggle} className="bi bi-list mobile-nav-toggle d-xl-none"/>
+        </div>
       </div>
     </div>
   )
