@@ -81,10 +81,10 @@
     }
   ],
   "facts": [
-    {"label":  "Happy Clients", "value":  36},
-    {"label":  "Projects", "value":  27},
-    {"label":  "Working Hour/Day", "value":  8},
-    {"label":  "Awards", "value":  3}
+    {"label":  "Happy Clients", "value":  36, "icon": "bx-happy-alt"},
+    {"label":  "Projects", "value":  27, "icon": "bxs-dashboard"},
+    {"label":  "Working Hour/Day", "value":  8, "icon": "bx-time-five"},
+    {"label":  "Awards", "value":  3, "icon": "bx-trophy"}
   ],
   "services": {
     "description": "A service business is one in which the perceived value of the offering to the buyer is determined largely by the services provided to him than the products offered. I used to give my respected clients kind of the tangible services where both the goods and services are provided to the customer, like restaurants and supermarkets, also come under the purview of the services marketing they sale you goods along with their great service.",
@@ -214,7 +214,8 @@
           "https://s3.envato.com/files/376085763/Settings.png",
           "https://s3.envato.com/files/376085763/User%20&%20Roles.png",
           "https://s3.envato.com/files/376085763/Calander.png"
-        ]
+        ],
+        "overview": "PipeX CRM - A simple application that can help you to improve customer relationship to grow your business more efficiently. You can manage your company’s associations in a friendly interface and with a low learning curve using it. Customer management is the prime objective and this application helps you in numerous ways. Developed using Laravel 8 and vue js."
       },
       {
         "name": "ReadyKit",
@@ -230,7 +231,8 @@
         "images": [
           "https://i.ibb.co/R9Mkf4b/readykit-1.png",
           "https://s3.envato.com/files/305918468/readykit.png"
-        ]
+        ],
+        "overview": "ReadtKit - A smart solution for building applications with ready UI and good laravel application structure. It contains many ready components which are required for most of the applications. It includes user role management, email, notifications and other CRUD functionality. If you are planning to develop your next project and want to save thousands of hours, then ReadyKit could the best solution for you. Developed using Laravel 8 and Vue. Required PHP 7.4+"
       },
       {
         "name": "Digital Bondhu",
@@ -248,7 +250,8 @@
           "https://i.ibb.co/QFZBD2S/digita-bondhu-2.png",
           "https://play-lh.googleusercontent.com/3qfXqSxPix3T0IwjjG36B1kIwyrVdARxbC__jPymSrDYCXOAzT6_o51rp6bFougNXXs=w2560-h1440-rw",
           "https://play-lh.googleusercontent.com/sDLEWx1qQrygcR15IJIXGBXRDUF0O2ZLrPzeJBfiVMFBc9TnjSbGguKWzrWwsQ-vts4R=w2560-h1440-rw"
-        ]
+        ],
+        "overview": "Digital Bondhu - A digital platform for oversea workers of Bangladesh. They can find jobs and get full entertainment from this application. Digital Bondhu also provides a wide range of usefull features like compensation, job security etc. I worked on the Backend part only, where i used Laravel along with MySQL as database."
       },
       {
         "name": "Treasure Wars",
@@ -270,7 +273,8 @@
           "https://i.ibb.co/VHn9Gvn/treasure-wars-1.png",
           "https://i.ibb.co/pWJy5kx/treasure-wars-2.png",
           "https://i.ibb.co/BcvmGFM/treasure-wars-3.png"
-        ]
+        ],
+        "overview": ""
       },
       {
         "name": "Adolescent",

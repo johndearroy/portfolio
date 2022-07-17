@@ -92,14 +92,14 @@ const ModalContent = ({project}) => {
             }
           </div>
 
-          <div className="col-lg-12">
-            <div className="portfolio-description">
-              <h2>Overview</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+          {project.overview && 
+            <div className="col-lg-12">
+              <div className="portfolio-description">
+                <h2>Overview</h2>
+                <p>{project.overview}</p>
+              </div>
             </div>
-          </div>
+          }
 
         </div>
 

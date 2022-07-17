@@ -13,16 +13,12 @@ React.useEffect(() => {
 }, [darkMode]);
 
   const handleToggle = () => {
-    setDarkMode(!darkMode)
-    // const color = darkMode ? 'red' : 'green';
-    // changeCssVariable('orange', color);
-    // const background = darkMode ? '#FFFFFF' : '#000000';
-    // changeCssVariable('background', background);
+    setDarkMode(!darkMode);
   }
 
   return (
     <div className="switch">
-      <input 
+      {/* <input 
         type="checkbox" 
         name="switch" 
         className="switch-checkbox" 
@@ -31,7 +27,10 @@ React.useEffect(() => {
         checked={darkMode} 
         onChange={handleToggle}
       />
-      <label className="switch-label" htmlFor="switch"/>
+      <label className="switch-label" htmlFor="switch"/> */}
+      <p>
+        <i className={`bx ${darkMode ? 'bx-sun': 'bx-moon'}`} onClick={() => setDarkMode(!darkMode)}/>
+      </p>
     </div>
   )
 }

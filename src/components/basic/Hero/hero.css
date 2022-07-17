@@ -5,11 +5,16 @@
 
 .switch {
     position: relative;
-    width: 4rem;
+    cursor: pointer;
     margin-top: -8px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+}
+
+.switch p i {
+    font-size: 1.5rem;
+    color: var(--orange);
 }
 
 .switch-checkbox {

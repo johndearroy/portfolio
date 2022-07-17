@@ -41,7 +41,7 @@ const FactsSection = () => {
             {data && data.facts && data.facts.map((fact, index) => (
               <div key={index} className="col-lg-3 col-md-6">
                 <div className="count-box">
-                  <i className="bi bi-emoji-smile"/>
+                  <i className={`bx ${fact.icon}`}/>
                   <PureCounter end={fact.value} />
                   <p>{fact.label}</p>
                 </div>
