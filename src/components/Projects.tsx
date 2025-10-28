@@ -2,11 +2,19 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, ExternalLink, Github, Calendar, User } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import projectsData from "@/data/projects.json";
 
 export const Projects = () => {
   const [expandedProjects, setExpandedProjects] = useState<Set<string>>(new Set());
+  const [selectedProject, setSelectedProject] = useState<typeof projectsData.projects[0] | null>(null);
 
   const toggleProject = (id: string) => {
     setExpandedProjects((prev) => {
@@ -39,8 +47,9 @@ export const Projects = () => {
             return (
               <Card
                 key={project.id}
-                className="glass-card p-6 hover:shadow-lg transition-all duration-300 hover:border-primary/50 animate-slide-up group"
+                className="glass-card p-6 hover:shadow-lg transition-all duration-300 hover:border-primary/50 animate-slide-up group cursor-pointer"
                 style={{ animationDelay: `${idx * 0.1}s` }}
+                onClick={() => setSelectedProject(project)}
               >
                 <div className="space-y-4">
                   {/* Project Name */}
@@ -106,6 +115,112 @@ export const Projects = () => {
           })}
         </div>
       </div>
+
+      {/* Project Detail Modal */}
+      <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
+        <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto animate-scale-in">
+          {selectedProject && (
+            <>
+              <DialogHeader>
+                <DialogTitle className="text-3xl font-bold text-gradient">
+                  {selectedProject.name}
+                </DialogTitle>
+                <DialogDescription className="text-lg mt-2">
+                  {selectedProject.description}
+                </DialogDescription>
+              </DialogHeader>
+
+              <div className="space-y-6 mt-6">
+                {/* Project Image */}
+                <div className="w-full aspect-video rounded-lg overflow-hidden bg-muted">
+                  <img
+                    src={selectedProject.image}
+                    alt={selectedProject.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Duration and Role */}
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="flex items-center gap-3 p-4 rounded-lg bg-secondary/20 border border-border">
+                    <Calendar className="h-5 w-5 text-primary" />
+                    <div>
+                      <p className="text-sm text-muted-foreground">Duration</p>
+                      <p className="font-semibold">{selectedProject.duration}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 p-4 rounded-lg bg-secondary/20 border border-border">
+                    <User className="h-5 w-5 text-primary" />
+                    <div>
+                      <p className="text-sm text-muted-foreground">Role</p>
+                      <p className="font-semibold">{selectedProject.role}</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tech Stack */}
+                <div>
+                  <h4 className="font-semibold text-lg mb-3 text-primary">Tech Stack</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {selectedProject.techStack.map((tech) => (
+                      <Badge
+                        key={tech}
+                        variant="secondary"
+                        className="bg-secondary hover:bg-primary/20 transition-colors text-base px-3 py-1"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Highlights */}
+                <div>
+                  <h4 className="font-semibold text-lg mb-3 text-primary">Key Highlights</h4>
+                  <ul className="space-y-3">
+                    {selectedProject.highlights.map((highlight, i) => (
+                      <li key={i} className="flex gap-3">
+                        <span className="text-primary mt-1 text-lg">▹</span>
+                        <span className="text-foreground/90 leading-relaxed">{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Links */}
+                {selectedProject.links && (
+                  <div className="flex flex-wrap gap-3 pt-4 border-t border-border">
+                    {selectedProject.links.live && (
+                      <Button
+                        asChild
+                        variant="default"
+                        className="gap-2"
+                      >
+                        <a href={selectedProject.links.live} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="h-4 w-4" />
+                          View Live Site
+                        </a>
+                      </Button>
+                    )}
+                    {selectedProject.links.github && (
+                      <Button
+                        asChild
+                        variant="outline"
+                        className="gap-2"
+                      >
+                        <a href={selectedProject.links.github} target="_blank" rel="noopener noreferrer">
+                          <Github className="h-4 w-4" />
+                          View Source
+                        </a>
+                      </Button>
+                    )}
+                  </div>
+                )}
+              </div>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };

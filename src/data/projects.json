@@ -9,7 +9,14 @@
         "Implemented microservices architecture for better scalability",
         "Reduced page load time by 70% through optimization",
         "Integrated AI-powered product recommendations"
-      ]
+      ],
+      "duration": "Jan 2022 - Dec 2023",
+      "role": "Lead Full-Stack Engineer",
+      "links": {
+        "live": "https://example.com",
+        "github": "https://github.com/example/ecommerce"
+      },
+      "image": "/placeholder.svg"
     },
     {
       "id": "2",
@@ -20,7 +27,14 @@
         "Built ETL pipeline processing 5M+ events daily",
         "Created custom data visualization library",
         "Achieved sub-second query response times"
-      ]
+      ],
+      "duration": "Mar 2021 - Dec 2021",
+      "role": "Senior Frontend Engineer",
+      "links": {
+        "live": "https://analytics-demo.com",
+        "github": "https://github.com/example/analytics"
+      },
+      "image": "/placeholder.svg"
     },
     {
       "id": "3",
@@ -31,7 +45,13 @@
         "Reduced deployment time by 80%",
         "Automated infrastructure provisioning for 50+ services",
         "Implemented zero-downtime deployment strategy"
-      ]
+      ],
+      "duration": "Jun 2020 - Feb 2021",
+      "role": "DevOps Engineer",
+      "links": {
+        "github": "https://github.com/example/devops-suite"
+      },
+      "image": "/placeholder.svg"
     },
     {
       "id": "4",
@@ -42,7 +62,13 @@
         "Built offline-first architecture with conflict resolution",
         "Achieved 4.8+ app store rating",
         "Scaled to 50K+ active users in first 6 months"
-      ]
+      ],
+      "duration": "Jan 2019 - May 2020",
+      "role": "Technical Lead",
+      "links": {
+        "live": "https://saas-app.com"
+      },
+      "image": "/placeholder.svg"
     }
   ]
 }
