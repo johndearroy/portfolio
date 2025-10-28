@@ -1,0 +1,40 @@
+{
+  "positions": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Tech Company Inc.",
+      "location": "Remote",
+      "startDate": "2021-01",
+      "endDate": "Present",
+      "achievements": [
+        "Led development of microservices architecture serving 5M+ users, reducing API response time by 60%",
+        "Architected and implemented real-time data pipeline processing 1TB+ daily using Apache Kafka",
+        "Mentored team of 5 junior engineers and established best practices for code review and deployment"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Innovation Labs",
+      "location": "San Francisco, CA",
+      "startDate": "2018-06",
+      "endDate": "2020-12",
+      "achievements": [
+        "Built and scaled RESTful APIs handling 10K+ requests per second using Node.js and Redis caching",
+        "Implemented automated CI/CD pipeline reducing deployment time from 2 hours to 15 minutes",
+        "Optimized database queries resulting in 45% improvement in application performance"
+      ]
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Digital Solutions Co.",
+      "location": "New York, NY",
+      "startDate": "2016-03",
+      "endDate": "2018-05",
+      "achievements": [
+        "Developed responsive web applications using React, Redux, and modern JavaScript ES6+",
+        "Integrated third-party APIs and payment gateways (Stripe, PayPal) processing $2M+ in transactions",
+        "Collaborated with UX team to improve user engagement metrics by 35%"
+      ]
+    }
+  ]
+}

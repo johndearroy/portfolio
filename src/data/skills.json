@@ -1,0 +1,42 @@
+{
+  "categories": [
+    {
+      "name": "Backend",
+      "skills": [
+        { "name": "Node.js", "icon": "Server" },
+        { "name": "Python", "icon": "Code2" },
+        { "name": "Java", "icon": "Coffee" },
+        { "name": "Go", "icon": "Zap" },
+        { "name": "PostgreSQL", "icon": "Database" },
+        { "name": "MongoDB", "icon": "Database" },
+        { "name": "Redis", "icon": "Layers" },
+        { "name": "GraphQL", "icon": "Network" }
+      ]
+    },
+    {
+      "name": "Frontend",
+      "skills": [
+        { "name": "React", "icon": "Atom" },
+        { "name": "TypeScript", "icon": "FileCode" },
+        { "name": "Next.js", "icon": "Layout" },
+        { "name": "Vue.js", "icon": "Component" },
+        { "name": "Tailwind CSS", "icon": "Palette" },
+        { "name": "Redux", "icon": "Box" },
+        { "name": "WebSocket", "icon": "Radio" }
+      ]
+    },
+    {
+      "name": "DevOps & Cloud",
+      "skills": [
+        { "name": "AWS", "icon": "Cloud" },
+        { "name": "Docker", "icon": "Package" },
+        { "name": "Kubernetes", "icon": "Boxes" },
+        { "name": "CI/CD", "icon": "GitBranch" },
+        { "name": "Terraform", "icon": "Settings" },
+        { "name": "Jenkins", "icon": "Workflow" },
+        { "name": "Nginx", "icon": "Server" },
+        { "name": "Linux", "icon": "Terminal" }
+      ]
+    }
+  ]
+}

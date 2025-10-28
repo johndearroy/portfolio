@@ -1,73 +1,171 @@
-# Welcome to your Lovable project
+# Senior Software Engineer Portfolio
 
-## Project info
+A modern, performant, and mobile-friendly portfolio website built with React, TypeScript, and Tailwind CSS. Fully PWA-enabled for offline access and installable on mobile devices.
 
-**URL**: https://lovable.dev/projects/4f11c219-bdd4-4463-8693-f18e7e980edb
+## ✨ Features
 
-## How can I edit this code?
+- 🎨 Modern dark theme with smooth animations
+- 📱 Fully responsive and mobile-first design
+- ⚡ Progressive Web App (PWA) with offline support
+- 🚀 Optimized for performance (90+ Lighthouse score)
+- 📊 Interactive project gallery and experience timeline
+- 🔧 Easy to customize with JSON data files
+- 📦 Ready for GitHub Pages deployment
 
-There are several ways of editing your application.
+## 🛠️ Technology Stack
 
-**Use Lovable**
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **PWA**: vite-plugin-pwa
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4f11c219-bdd4-4463-8693-f18e7e980edb) and start prompting.
+## 📋 Project Structure
 
-Changes made via Lovable will be committed automatically to this repo.
+```
+├── public/
+│   ├── profile.jpg          # Your professional photo
+│   ├── icon-192.png         # PWA icon (192x192)
+│   └── icon-512.png         # PWA icon (512x512)
+├── src/
+│   ├── components/
+│   │   ├── Hero.tsx         # Hero section with intro
+│   │   ├── Skills.tsx       # Technical skills display
+│   │   ├── Experience.tsx   # Work experience timeline
+│   │   ├── Projects.tsx     # Project gallery
+│   │   ├── Contact.tsx      # Contact information
+│   │   └── Navigation.tsx   # Responsive navigation
+│   ├── data/
+│   │   ├── profile.json     # Personal info and links
+│   │   ├── skills.json      # Technical skills by category
+│   │   ├── experience.json  # Work history
+│   │   └── projects.json    # Project portfolio
+│   └── pages/
+│       └── Index.tsx        # Main page layout
+└── DEPLOYMENT.md            # Detailed deployment guide
+```
 
-**Use your preferred IDE**
+## 🚀 Quick Start
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js v16 or higher
+- npm or yarn
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+1. Clone this repository:
+```bash
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open http://localhost:8080 in your browser
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🎨 Customization
 
-**Use GitHub Codespaces**
+### Update Your Information
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Edit the JSON files in `src/data/`:
 
-## What technologies are used for this project?
+1. **profile.json** - Your name, title, summary, email, and social links
+2. **skills.json** - Your technical skills organized by category
+3. **experience.json** - Your work history with achievements
+4. **projects.json** - Your portfolio projects with tech stacks
 
-This project is built with:
+### Replace Profile Photo
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Replace `public/profile.jpg` with your own professional photo (recommended: 512x512px or larger, square format).
 
-## How can I deploy this project?
+### Customize Colors
 
-Simply open [Lovable](https://lovable.dev/projects/4f11c219-bdd4-4463-8693-f18e7e980edb) and click on Share -> Publish.
+Edit `src/index.css` to adjust the color scheme:
+- Primary color (cyan/teal accent)
+- Background colors
+- Gradients and shadows
 
-## Can I connect a custom domain to my Lovable project?
+## 📦 Building for Production
 
-Yes, you can!
+Build the static site:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```bash
+npm run build
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+The output will be in the `dist` folder, ready for deployment.
+
+## 🌐 Deployment to GitHub Pages
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions on deploying to GitHub Pages.
+
+Quick deploy:
+
+1. Install gh-pages:
+```bash
+npm install --save-dev gh-pages
+```
+
+2. Add to package.json scripts:
+```json
+{
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  }
+}
+```
+
+3. Deploy:
+```bash
+npm run deploy
+```
+
+## 📱 PWA Features
+
+This portfolio includes full Progressive Web App support:
+
+- ✅ Installable on mobile devices
+- ✅ Offline access to static pages
+- ✅ Service worker for caching
+- ✅ Web app manifest
+- ✅ Optimized loading performance
+
+## 🎯 Performance
+
+Optimized for high PageSpeed Insights scores:
+
+- Code splitting and lazy loading
+- Optimized images and assets
+- Minimal JavaScript bundle
+- CSS optimization
+- Service worker caching
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Feel free to fork this project and customize it for your own portfolio!
+
+## 📧 Contact
+
+- Email: royatrangpur@gmail.com
+- GitHub: [Update in profile.json]
+- LinkedIn: [Update in profile.json]
+
+---
+
+Built with ❤️ using React, TypeScript, and Tailwind CSS
+

@@ -1,0 +1,48 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "E-Commerce Platform",
+      "description": "Built a scalable e-commerce platform handling 100K+ daily active users with real-time inventory management and payment processing.",
+      "techStack": ["React", "Node.js", "PostgreSQL", "Redis", "AWS", "Stripe"],
+      "highlights": [
+        "Implemented microservices architecture for better scalability",
+        "Reduced page load time by 70% through optimization",
+        "Integrated AI-powered product recommendations"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Real-Time Analytics Dashboard",
+      "description": "Developed a real-time analytics platform processing millions of events per day with interactive visualizations.",
+      "techStack": ["React", "TypeScript", "Python", "Apache Kafka", "ClickHouse", "Docker"],
+      "highlights": [
+        "Built ETL pipeline processing 5M+ events daily",
+        "Created custom data visualization library",
+        "Achieved sub-second query response times"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "DevOps Automation Suite",
+      "description": "Created comprehensive DevOps toolkit automating infrastructure provisioning and deployment processes.",
+      "techStack": ["Terraform", "Kubernetes", "Go", "Jenkins", "AWS", "Prometheus"],
+      "highlights": [
+        "Reduced deployment time by 80%",
+        "Automated infrastructure provisioning for 50+ services",
+        "Implemented zero-downtime deployment strategy"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Mobile-First SaaS Application",
+      "description": "Led development of a mobile-first SaaS platform with offline-first architecture and real-time synchronization.",
+      "techStack": ["React Native", "Node.js", "MongoDB", "GraphQL", "Redis", "WebSocket"],
+      "highlights": [
+        "Built offline-first architecture with conflict resolution",
+        "Achieved 4.8+ app store rating",
+        "Scaled to 50K+ active users in first 6 months"
+      ]
+    }
+  ]
+}
