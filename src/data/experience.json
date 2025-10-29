@@ -2,9 +2,9 @@
   "positions": [
     {
       "title": "Senior Software Engineer",
-      "company": "Tech Company Inc.",
+      "company": "Binate Solutions Ltd.",
       "location": "Remote",
-      "startDate": "2021-01",
+      "startDate": "2021-06",
       "endDate": "Present",
       "achievements": [
         "Led development of microservices architecture serving 5M+ users, reducing API response time by 60%",
@@ -13,9 +13,9 @@
       ]
     },
     {
-      "title": "Software Engineer",
-      "company": "Innovation Labs",
-      "location": "San Francisco, CA",
+      "title": "Senior Software Engineer",
+      "company": "Gain Solutions",
+      "location": "DOHS, Mirpur, Dhaka",
       "startDate": "2018-06",
       "endDate": "2020-12",
       "achievements": [
@@ -26,8 +26,8 @@
     },
     {
       "title": "Full Stack Developer",
-      "company": "Digital Solutions Co.",
-      "location": "New York, NY",
+      "company": "Riseup Labs",
+      "location": "Uttara, Dhaka",
       "startDate": "2016-03",
       "endDate": "2018-05",
       "achievements": [

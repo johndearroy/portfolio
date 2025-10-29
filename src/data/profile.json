@@ -1,10 +1,11 @@
 {
-  "name": "Senior Software Engineer",
+  "name": "<Dear Roy/>",
   "title": "Senior Software Engineer",
   "photo": "/profile.jpg",
   "email": "royatrangpur@gmail.com",
-  "github": "https://github.com/yourusername",
-  "linkedin": "https://linkedin.com/in/yourprofile",
+  "github": "https://github.com/johndearroy",
+  "linkedin": "https://www.linkedin.com/in/johndearroy/",
+  "facebook": "https://www.facebook.com/lord.of.misfortune",
   "summary": "Senior Software Engineer with 8+ years of experience building scalable, high-performance web applications. Specialized in full-stack development, cloud architecture, and leading engineering teams to deliver innovative solutions.",
-  "portfolioUrl": "https://yourusername.github.io"
+  "portfolioUrl": "https://johndearroy.github.io/portfolio/"
 }

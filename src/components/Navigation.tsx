@@ -51,7 +51,7 @@ export const Navigation = () => {
           >
             <Terminal className="h-6 w-6 text-primary group-hover:rotate-12 transition-transform" />
             <span className="code-text text-xl font-bold">
-              <span className="text-primary">$</span> dev.portfolio
+              <span className="text-primary">$</span> roy.portfolio
             </span>
           </button>
 

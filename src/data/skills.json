@@ -5,8 +5,9 @@
       "skills": [
         { "name": "Node.js", "icon": "Server" },
         { "name": "Python", "icon": "Code2" },
-        { "name": "Java", "icon": "Coffee" },
+        { "name": "Php", "icon": "Coffee" },
         { "name": "Go", "icon": "Zap" },
+        { "name": "MySQL", "icon": "Database" },
         { "name": "PostgreSQL", "icon": "Database" },
         { "name": "MongoDB", "icon": "Database" },
         { "name": "Redis", "icon": "Layers" },
@@ -18,11 +19,12 @@
       "skills": [
         { "name": "React", "icon": "Atom" },
         { "name": "TypeScript", "icon": "FileCode" },
-        { "name": "Next.js", "icon": "Layout" },
         { "name": "Vue.js", "icon": "Component" },
         { "name": "Tailwind CSS", "icon": "Palette" },
         { "name": "Redux", "icon": "Box" },
-        { "name": "WebSocket", "icon": "Radio" }
+        { "name": "WebSocket", "icon": "Radio" },
+        { "name": "React Native", "icon": "Layout" },
+        { "name": "Flutter", "icon": "Layout" }
       ]
     },
     {
@@ -32,10 +34,21 @@
         { "name": "Docker", "icon": "Package" },
         { "name": "Kubernetes", "icon": "Boxes" },
         { "name": "CI/CD", "icon": "GitBranch" },
-        { "name": "Terraform", "icon": "Settings" },
+        { "name": "Graph API", "icon": "Settings" },
         { "name": "Jenkins", "icon": "Workflow" },
         { "name": "Nginx", "icon": "Server" },
         { "name": "Linux", "icon": "Terminal" }
+      ]
+    },
+    {
+      "name": "Frameworks & Libraries",
+      "skills": [
+        { "name": "Laravel", "icon": "Cloud" },
+        { "name": "NextJs", "icon": "Package" },
+        { "name": "NestJs", "icon": "Boxes" },
+        { "name": "dJango", "icon": "GitBranch" },
+        { "name": "Symfony", "icon": "Settings" },
+        { "name": "Puppiteer", "icon": "Workflow" }
       ]
     }
   ]

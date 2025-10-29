@@ -6,7 +6,8 @@ import { Terminal, Code2, Server, Cloud } from "lucide-react";
 const categoryIcons = {
   "Backend": Server,
   "Frontend": Code2,
-  "DevOps & Cloud": Cloud
+  "DevOps & Cloud": Cloud,
+  "Frameworks & Libraries": Terminal
 };
 
 export const Skills = () => {
@@ -28,7 +29,7 @@ export const Skills = () => {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillsData.categories.map((category, idx) => {
             const IconComponent = categoryIcons[category.name as keyof typeof categoryIcons] || Terminal;
             
