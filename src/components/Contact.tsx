@@ -1,95 +1,108 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Mail, Github, Linkedin, Send } from "lucide-react";
+import { Mail, Github, Linkedin, Terminal, Send } from "lucide-react";
 import profileData from "@/data/profile.json";
 
 export const Contact = () => {
   return (
     <section id="contact" className="py-32 px-4 relative">
-      {/* Background accent */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl" />
-      
       <div className="container mx-auto max-w-4xl relative z-10">
-        <div className="sticky top-0 z-20 text-center mb-16 animate-fade-in glass-card py-8 -mt-8 border-b border-primary/20">
-          <div className="inline-block mb-4">
-            <Badge className="bg-gradient-to-r from-accent to-primary text-white border-0 px-6 py-2 text-sm font-semibold">
-              Get In Touch
-            </Badge>
+        {/* Section Header */}
+        <div className="sticky top-0 z-20 bg-background/60 backdrop-blur-xl py-8 -mt-8 border-b border-primary/10 mb-16">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Terminal className="h-6 w-6 text-primary" />
+            <span className="code-text text-primary text-sm">$ contact --init</span>
           </div>
-          <h2 className="text-5xl md:text-7xl font-display font-bold mb-6">
-            <span className="text-gradient">Let's Connect</span>
+          <h2 className="text-4xl md:text-6xl font-bold text-center mb-4">
+            <span className="code-text text-gradient">Get In Touch</span>
           </h2>
-          <p className="text-muted-foreground text-xl max-w-2xl mx-auto font-light">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto">
+            // Open to discussing new opportunities and collaborations
           </p>
         </div>
 
-        <Card className="glass-card p-12 animate-slide-up relative overflow-hidden group">
-          {/* Animated gradient background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-          
-          <div className="relative z-10 space-y-12">
-            {/* Email CTA */}
-            <div className="text-center space-y-6">
-              <div className="relative inline-block">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-2xl animate-pulse" />
-                <Mail className="relative h-16 w-16 text-primary mx-auto mb-4" />
+        <Card className="terminal-card p-8 md:p-12 animate-slide-up">
+          {/* Terminal Header */}
+          <div className="flex items-center gap-2 mb-8 pb-4 border-b border-border">
+            <div className="flex gap-1.5">
+              <div className="w-3 h-3 rounded-full bg-destructive/60" />
+              <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
+              <div className="w-3 h-3 rounded-full bg-primary/60" />
+            </div>
+            <span className="code-text text-xs text-muted-foreground ml-2">
+              ~/contact
+            </span>
+          </div>
+
+          <div className="space-y-8">
+            {/* Email Section */}
+            <div className="space-y-4">
+              <div className="flex items-center gap-2 mb-4">
+                <Mail className="h-5 w-5 text-primary" />
+                <span className="code-text text-sm text-primary">emailAddress:</span>
               </div>
-              <div>
-                <p className="text-muted-foreground mb-4 text-lg">Drop me an email at</p>
-                <a
-                  href={`mailto:${profileData.email}`}
-                  className="text-3xl md:text-4xl font-display font-bold text-gradient hover:scale-105 inline-block transition-transform duration-300"
-                >
-                  {profileData.email}
-                </a>
-              </div>
+              <a
+                href={`mailto:${profileData.email}`}
+                className="code-text text-2xl md:text-3xl font-bold text-gradient hover:opacity-80 transition-opacity block"
+              >
+                {profileData.email}
+              </a>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-semibold text-lg px-8 py-6 shadow-2xl hover:shadow-glow transition-all duration-300 hover:scale-105 group"
+                className="terminal-border bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 group mt-4"
                 asChild
               >
                 <a href={`mailto:${profileData.email}`}>
-                  Send Message
-                  <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <span className="code-text">$ send_message</span>
+                  <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
             </div>
 
             {/* Divider */}
-            <div className="relative">
+            <div className="relative py-4">
               <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-primary/20" />
+                <div className="w-full border-t border-border" />
               </div>
-              <div className="relative flex justify-center text-sm">
-                <span className="px-6 bg-card text-muted-foreground font-medium">OR CONNECT VIA</span>
+              <div className="relative flex justify-center">
+                <span className="code-text px-4 bg-card text-xs text-muted-foreground">
+                  OR CONNECT VIA
+                </span>
               </div>
             </div>
 
             {/* Social Links */}
-            <div className="flex justify-center gap-6">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button
-                size="lg"
                 variant="outline"
-                className="border-2 border-primary/40 hover:border-primary bg-secondary/50 backdrop-blur-sm hover:bg-primary/10 transition-all duration-300 hover:scale-110 h-16 w-16 hover-lift group"
+                size="lg"
+                className="flex-1 justify-start border-border hover:border-primary/50 hover:bg-primary/10 group"
                 asChild
               >
-                <a href={profileData.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                  <Github className="h-7 w-7 text-primary group-hover:rotate-12 transition-transform" />
+                <a href={profileData.github} target="_blank" rel="noopener noreferrer">
+                  <Github className="h-5 w-5 mr-3 text-primary" />
+                  <span className="code-text">GitHub</span>
                 </a>
               </Button>
               
               <Button
-                size="lg"
                 variant="outline"
-                className="border-2 border-primary/40 hover:border-primary bg-secondary/50 backdrop-blur-sm hover:bg-primary/10 transition-all duration-300 hover:scale-110 h-16 w-16 hover-lift group"
+                size="lg"
+                className="flex-1 justify-start border-border hover:border-primary/50 hover:bg-primary/10 group"
                 asChild
               >
-                <a href={profileData.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <Linkedin className="h-7 w-7 text-primary group-hover:rotate-12 transition-transform" />
+                <a href={profileData.linkedin} target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5 mr-3 text-primary" />
+                  <span className="code-text">LinkedIn</span>
                 </a>
               </Button>
+            </div>
+
+            {/* Footer Note */}
+            <div className="pt-6 border-t border-border">
+              <p className="code-text text-xs text-muted-foreground text-center">
+                <span className="text-primary">{">"}</span> Response time: Usually within 24 hours
+              </p>
             </div>
           </div>
         </Card>
