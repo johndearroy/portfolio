@@ -10,7 +10,7 @@ export const Skills = () => {
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
       
       <div className="container mx-auto max-w-7xl relative z-10">
-        <div className="text-center mb-20 animate-fade-in">
+        <div className="sticky top-0 z-20 text-center mb-20 animate-fade-in bg-background/80 backdrop-blur-xl py-8 -mt-8 border-b border-primary/10">
           <div className="inline-block mb-4">
             <Badge className="bg-gradient-to-r from-primary to-accent text-white border-0 px-6 py-2 text-sm font-semibold">
               Technical Expertise
