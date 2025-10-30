@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import skillsData from "@/data/skills.json";
 import { Terminal, Code2, Server, Cloud } from "lucide-react";
+import { ContributionGraph } from "@/components/ContributionGraph";
 
 const categoryIcons = {
   "Backend": Server,
@@ -25,6 +26,18 @@ export const Skills = () => {
           <p className="text-muted-foreground text-center max-w-2xl mx-auto">
             // Core technologies and frameworks I work with
           </p>
+        </div>
+
+        {/* Contribution Graph */}
+        <div className="mb-16 max-w-5xl mx-auto">
+          <Card className="terminal-card p-6">
+            <div className="flex items-center gap-2 mb-4">
+              <Terminal className="h-5 w-5 text-primary" />
+              <h3 className="code-text text-lg font-semibold">$ git log --graph --all</h3>
+            </div>
+            <p className="text-sm text-muted-foreground mb-6">// Contribution activity over the past year</p>
+            <ContributionGraph />
+          </Card>
         </div>
 
         {/* Skills Grid */}
@@ -53,14 +66,19 @@ export const Skills = () => {
                   {category.skills.map((skill, skillIdx) => (
                     <div
                       key={skill.name}
-                      className="flex items-center gap-2 py-2 px-3 bg-secondary/50 border border-border hover:border-primary/40 rounded transition-all hover:translate-x-1 group/item"
+                      className="flex items-center justify-between gap-2 py-2 px-3 bg-secondary/50 border border-border hover:border-primary/40 rounded transition-all hover:translate-x-1 group/item"
                       style={{ 
                         animationDelay: `${(idx * 0.1) + (skillIdx * 0.05)}s`,
                         animation: 'slideLeft 0.6s ease-out forwards'
                       }}
                     >
-                      <span className="code-text text-primary text-xs">{">"}</span>
-                      <span className="code-text text-sm">{skill.name}</span>
+                      <div className="flex items-center gap-2">
+                        <span className="code-text text-primary text-xs">{">"}</span>
+                        <span className="code-text text-sm">{skill.name}</span>
+                      </div>
+                      <Badge variant="outline" className="code-text text-[10px] border-primary/20 text-primary/60">
+                        {Math.floor(Math.random() * 5) + 3}y
+                      </Badge>
                     </div>
                   ))}
                 </div>

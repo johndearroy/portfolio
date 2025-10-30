@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin, Terminal, Code2, ChevronDown } from "lucide-react";
 import profileData from "@/data/profile.json";
+import { TypingAnimation } from "@/components/TypingAnimation";
+import { InteractiveTerminal } from "@/components/InteractiveTerminal";
 
 export const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -117,6 +119,23 @@ export const Hero = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
+          </div>
+
+          {/* Typing Animation */}
+          <div className="pt-8 w-full max-w-2xl">
+            <TypingAnimation
+              texts={[
+                'const experience = "8+ years building scalable systems";',
+                'const passion = "creating elegant solutions";',
+                'const status = "available for opportunities";',
+              ]}
+              className="text-sm md:text-base text-primary/80"
+            />
+          </div>
+
+          {/* Interactive Terminal */}
+          <div className="pt-8 w-full animate-fade-in" style={{ animationDelay: "0.5s" }}>
+            <InteractiveTerminal />
           </div>
         </div>
       </div>

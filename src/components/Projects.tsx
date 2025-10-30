@@ -53,6 +53,20 @@ export const Projects = () => {
                   {project.description}
                 </p>
 
+                {/* Project Metrics */}
+                {project.metrics && (
+                  <div className="grid grid-cols-2 gap-2 py-3 border-y border-border">
+                    <div className="text-center">
+                      <div className="code-text text-lg font-bold text-primary">{project.metrics.users}</div>
+                      <div className="text-xs text-muted-foreground">Users</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="code-text text-lg font-bold text-primary">{project.metrics.performance}</div>
+                      <div className="text-xs text-muted-foreground">Performance</div>
+                    </div>
+                  </div>
+                )}
+
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
                   {project.techStack.slice(0, 4).map((tech) => (

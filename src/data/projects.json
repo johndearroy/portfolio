@@ -12,6 +12,12 @@
       ],
       "duration": "Jan 2022 - Dec 2023",
       "role": "Lead Full-Stack Engineer",
+      "metrics": {
+        "users": "100K+",
+        "performance": "98/100",
+        "team": "8 members",
+        "loadTime": "0.9s"
+      },
       "links": {
         "live": "https://example.com",
         "github": "https://github.com/example/ecommerce"
@@ -30,6 +36,12 @@
       ],
       "duration": "Mar 2021 - Dec 2021",
       "role": "Senior Frontend Engineer",
+      "metrics": {
+        "users": "50K+",
+        "performance": "95/100",
+        "team": "5 members",
+        "loadTime": "1.2s"
+      },
       "links": {
         "live": "https://analytics-demo.com",
         "github": "https://github.com/example/analytics"
@@ -48,6 +60,12 @@
       ],
       "duration": "Jun 2020 - Feb 2021",
       "role": "DevOps Engineer",
+      "metrics": {
+        "users": "50+ services",
+        "performance": "99/100",
+        "team": "3 members",
+        "loadTime": "N/A"
+      },
       "links": {
         "github": "https://github.com/example/devops-suite"
       },
@@ -65,6 +83,12 @@
       ],
       "duration": "Jan 2019 - May 2020",
       "role": "Technical Lead",
+      "metrics": {
+        "users": "50K+",
+        "performance": "4.8★",
+        "team": "6 members",
+        "loadTime": "1.5s"
+      },
       "links": {
         "live": "https://saas-app.com"
       },
