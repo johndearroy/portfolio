@@ -20,7 +20,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center px-4 pt-32 relative overflow-hidden">
       {/* Terminal Grid Background */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-10 left-10 code-text text-primary/20 text-xs">

@@ -117,6 +117,16 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-md);
   }
 
+  /* Hide scrollbar utility */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
   .terminal-card-hover {
     transition: var(--transition-smooth);
   }

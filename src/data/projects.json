@@ -18,6 +18,12 @@
         "team": "8 members",
         "loadTime": "0.9s"
       },
+      "screenshots": [
+        { "caption": "Product Catalog" },
+        { "caption": "Checkout Flow" }
+      ],
+      "codeSnippet": "// Payment processing pipeline\nconst processPayment = async (order) => {\n  await validateOrder(order);\n  const payment = await stripe.charge({\n    amount: order.total,\n    currency: 'usd'\n  });\n  await updateInventory(order.items);\n  return payment;\n};",
+      "architecture": "┌──────────┐     ┌──────────┐\n│  Client  │────▶│    CDN   │\n└──────────┘     └────┬─────┘\n                      │\n              ┌───────▼────────┐\n              │  API Gateway   │\n              └───────┬────────┘\n                      │\n         ┌────────────┼────────────┐\n         │            │            │\n    ┌────▼───┐   ┌───▼────┐  ┌───▼────┐\n    │Payment │   │Inventory│  │ Orders │\n    │Service │   │ Service │  │Service │\n    └────────┘   └────────┘  └────────┘",
       "links": {
         "live": "https://example.com",
         "github": "https://github.com/example/ecommerce"
@@ -42,6 +48,12 @@
         "team": "5 members",
         "loadTime": "1.2s"
       },
+      "screenshots": [
+        { "caption": "Dashboard Overview" },
+        { "caption": "Real-time Metrics" }
+      ],
+      "codeSnippet": "// Real-time event processing\nconst processEvent = async (event) => {\n  const validated = await validate(event);\n  await kafka.produce({\n    topic: 'events',\n    message: validated\n  });\n  return analytics.track(validated);\n};",
+      "architecture": "┌─────────────┐\n│   Client    │\n└──────┬──────┘\n       │\n┌──────▼──────┐\n│ API Gateway │\n└──────┬──────┘\n       │\n┌──────▼──────┐\n│    Kafka    │\n└──────┬──────┘\n       │\n┌──────▼──────┐\n│ ClickHouse  │\n└─────────────┘",
       "links": {
         "live": "https://analytics-demo.com",
         "github": "https://github.com/example/analytics"
@@ -66,6 +78,12 @@
         "team": "3 members",
         "loadTime": "N/A"
       },
+      "screenshots": [
+        { "caption": "Infrastructure Dashboard" },
+        { "caption": "Deployment Pipeline" }
+      ],
+      "codeSnippet": "// Infrastructure as Code\nresource \"aws_instance\" \"app\" {\n  ami           = var.ami_id\n  instance_type = \"t3.medium\"\n  \n  tags = {\n    Name = \"app-server\"\n    Env  = terraform.workspace\n  }\n}",
+      "architecture": "┌──────────┐\n│   Git    │\n└────┬─────┘\n     │\n┌────▼─────┐\n│ Jenkins  │\n└────┬─────┘\n     │\n┌────▼─────┐\n│Terraform │\n└────┬─────┘\n     │\n┌────▼─────┐\n│   AWS    │\n└──────────┘",
       "links": {
         "github": "https://github.com/example/devops-suite"
       },
@@ -89,6 +107,12 @@
         "team": "6 members",
         "loadTime": "1.5s"
       },
+      "screenshots": [
+        { "caption": "Mobile Interface" },
+        { "caption": "Sync Dashboard" }
+      ],
+      "codeSnippet": "// Offline-first sync\nconst syncData = async () => {\n  const local = await db.getChanges();\n  const conflicts = await api.sync(local);\n  \n  if (conflicts.length) {\n    return resolveConflicts(conflicts);\n  }\n  return { success: true };\n};",
+      "architecture": "┌──────────┐\n│  Mobile  │\n└────┬─────┘\n     │\n┌────▼─────┐\n│Local DB  │\n└────┬─────┘\n     │\n┌────▼─────┐\n│WebSocket │\n└────┬─────┘\n     │\n┌────▼─────┐\n│ Backend  │\n└──────────┘",
       "links": {
         "live": "https://saas-app.com"
       },

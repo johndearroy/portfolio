@@ -99,10 +99,10 @@ export const Projects = () => {
 
       {/* Project Detail Modal */}
       <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
-        <DialogContent className="terminal-card max-w-3xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="terminal-card max-w-5xl max-h-[90vh] overflow-hidden flex flex-col">
           {selectedProject && (
             <>
-              <DialogHeader>
+              <DialogHeader className="flex-shrink-0">
                 <div className="flex items-center gap-2 mb-2">
                   <Terminal className="h-5 w-5 text-primary" />
                   <span className="code-text text-xs text-primary">
@@ -114,10 +114,64 @@ export const Projects = () => {
                 </DialogTitle>
               </DialogHeader>
 
-              <div className="space-y-6 pt-4">
+              <div className="space-y-6 pt-4 overflow-y-auto flex-1 pr-2 scrollbar-hide">
                 <p className="text-muted-foreground leading-relaxed">
                   {selectedProject.description}
                 </p>
+
+                {/* Project Screenshots/Images */}
+                {selectedProject.screenshots && selectedProject.screenshots.length > 0 && (
+                  <div>
+                    <h4 className="code-text text-sm text-primary mb-3">// Screenshots</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {selectedProject.screenshots.map((screenshot: any, idx: number) => (
+                        <div key={idx} className="terminal-card p-2 group cursor-pointer hover:border-primary/40 transition-colors">
+                          <div className="relative aspect-video bg-secondary/20 rounded overflow-hidden">
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className="text-center space-y-2">
+                                <Terminal className="h-8 w-8 text-primary/40 mx-auto" />
+                                <p className="code-text text-xs text-muted-foreground">
+                                  {screenshot.caption || `Screenshot ${idx + 1}`}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          {screenshot.caption && (
+                            <p className="code-text text-xs text-muted-foreground mt-2">
+                              // {screenshot.caption}
+                            </p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Code Snippet */}
+                {selectedProject.codeSnippet && (
+                  <div>
+                    <h4 className="code-text text-sm text-primary mb-3">// Implementation Highlight</h4>
+                    <div className="terminal-card p-4 bg-secondary/20">
+                      <pre className="code-text text-xs overflow-x-auto">
+                        <code className="text-primary/80">
+                          {selectedProject.codeSnippet}
+                        </code>
+                      </pre>
+                    </div>
+                  </div>
+                )}
+
+                {/* Architecture ASCII */}
+                {selectedProject.architecture && (
+                  <div>
+                    <h4 className="code-text text-sm text-primary mb-3">// System Architecture</h4>
+                    <div className="terminal-card p-4 bg-secondary/20">
+                      <pre className="code-text text-xs text-primary/60 whitespace-pre">
+                        {selectedProject.architecture}
+                      </pre>
+                    </div>
+                  </div>
+                )}
 
                 {/* Tech Stack */}
                 <div>
