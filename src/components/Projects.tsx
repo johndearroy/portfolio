@@ -123,9 +123,9 @@ export const Projects = () => {
                 {selectedProject.screenshots && selectedProject.screenshots.length > 0 && (
                   <div>
                     <h4 className="code-text text-sm text-primary mb-3">// Screenshots</h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
                       {selectedProject.screenshots.map((screenshot: any, idx: number) => (
-                        <div key={idx} className="terminal-card p-2 group cursor-pointer hover:border-primary/40 transition-colors">
+                        <div key={idx} className="terminal-card p-2 group cursor-pointer hover:border-primary/40 transition-colors flex-shrink-0 w-[400px]">
                           <div className="relative aspect-video bg-secondary/20 rounded overflow-hidden">
                             <div className="absolute inset-0 flex items-center justify-center">
                               <div className="text-center space-y-2">
