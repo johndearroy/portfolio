@@ -165,6 +165,158 @@
         "github": ""
       },
       "image": "/placeholder.svg"
+    },
+    {
+      "id": "8",
+      "name": "BDTodays.com",
+      "description": "Online news portal, customized with WordPress.",
+      "techStack": ["WordPress", "MySQL"],
+      "highlights": ["Customized a WordPress installation for high-traffic, real-time news content delivery."],
+      "duration": "Jan 2019 - Jun 2019",
+      "role": "Project Manager and Team Lead",
+      "metrics": {},
+      "screenshots": [{ "caption": "BDTodays Homepage", "url": "https://i.ibb.co.com/MkwhLd99/BDTodays.png" }],
+      "codeSnippet": "// WordPress: Custom query to fetch breaking news\n$args = array(\n    'post_type' => 'post',\n    'category_name' => 'breaking-news',\n    'posts_per_page' => 5\n);\n$breaking_news = new WP_Query($args);",
+      "architecture": "Client (Browser) <--> Web Server (Nginx/Apache + PHP) <--> WordPress/MySQL. Optimized for content caching and high readership.",
+      "links": {
+        "live": "",
+        "github": ""
+      },
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": "9",
+      "name": "ReApp",
+      "description": "Cross-platform mobile application using React Native.",
+      "techStack": ["React Native", "ExpressJs", "MongoDB"],
+      "highlights": ["Developed a cross-platform mobile application using React Native."],
+      "duration": "Jan 2019 - Jun 2019",
+      "role": "Project Manager and Team Lead",
+      "metrics": {},
+      "screenshots": [],
+      "codeSnippet": "// React Native: Basic Component\nconst AppHeader = () => (\n  <View style={styles.header}>\n    <Text style={styles.title}>ReApp</Text>\n  </View>\n);",
+      "architecture": "Client (React Native) <--> REST API (ExpressJS) <--> Database (MongoDB). Focus on shared codebase for iOS/Android.",
+      "links": {
+        "live": "",
+        "github": ""
+      },
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": "10",
+      "name": "YouKnow",
+      "description": "Cross-platform mobile application using React Native.",
+      "techStack": ["React Native", "ExpressJs", "MongoDB"],
+      "highlights": ["Developed a cross-platform mobile application using React Native."],
+      "duration": "Jan 2019 - Jun 2019",
+      "role": "Project Manager and Team Lead",
+      "metrics": {},
+      "screenshots": [],
+      "codeSnippet": "// React Native: State hook for user input\nconst [searchQuery, setSearchQuery] = useState('');\n\n// Fetch results on query change\neffect(() => {\n    fetchData(searchQuery);\n}, [searchQuery]);",
+      "architecture": "Client (React Native) <--> REST API (ExpressJS) <--> Database (MongoDB). Focus on data fetching and display.",
+      "links": {
+        "live": "",
+        "github": ""
+      },
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": "11",
+      "name": "Panchabazar",
+      "description": "Flutter App for daily corona updates.",
+      "techStack": ["Flutter", "REST API"],
+      "highlights": ["Built a cross-platform mobile application for displaying real-time or daily data updates."],
+      "duration": "Jan 2019 - Jun 2019",
+      "role": "Project Manager and Team Lead",
+      "metrics": {},
+      "screenshots": [],
+      "codeSnippet": "// Dart/Flutter: Fetching data from API\nFuture<CoronaData> fetchUpdates() async {\n  final response = await http.get(Uri.parse('https://api.covid.com/daily'));\n  if (response.statusCode == 200) {\n    return CoronaData.fromJson(jsonDecode(response.body));\n  } else {\n    throw Exception('Failed to load data');\n  }\n}",
+      "architecture": "Client (Flutter) <--> External REST API. Focus on lightweight API calls and UI rendering.",
+      "links": {
+        "live": "",
+        "github": ""
+      },
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": "12",
+      "name": "QStatus",
+      "description": "Flutter App for quickly generating status updates and sharing them.",
+      "techStack": ["Flutter", "Firebase"],
+      "highlights": ["Developed a utility app for quick content creation and sharing on mobile platforms."],
+      "duration": "Jan 2019 - Jun 2019",
+      "role": "Project Manager and Team Lead",
+      "metrics": {},
+      "screenshots": [],
+      "codeSnippet": "// Dart/Flutter: Generating status text\nString generateStatus(String input) {\n    // Placeholder logic: capitalize and add emoji\n    return '🔥 ' + input.toUpperCase() + ' 🔥';\n}",
+      "architecture": "Client (Flutter) <--> Firebase (Firestore/Auth) for user data and storage. Focus on fast content generation.",
+      "links": {
+        "live": "",
+        "github": ""
+      },
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": "13",
+      "name": "7th March Speech (VR)",
+      "description": "Virtual Reality project for the ICT Ministry (Bangladesh).",
+      "techStack": ["Unreal", "Maya", "Max", "Motionbuilder", "Perception Neuron"],
+      "highlights": ["Created an immersive Virtual Reality experience, utilizing professional 3D and motion capture tools."],
+      "duration": "Jan 2019 - Jun 2019",
+      "role": "Project Manager and Team Lead",
+      "metrics": {},
+      "screenshots": [
+        { "caption": "VR Project Page", "url": "https://riseuplabs.com/blog/wp-content/uploads/2020/03/speech-in-vr-bangabandhu.jpg" },
+        { "caption": "VR Project Page", "url": "https://riseuplabs.com/blog/wp-content/uploads/2020/03/speech-with-audience.jpg" },
+        { "caption": "Inaugurated honorable Prime Minister Sheikh Hasina", "url": "https://riseuplabs.com/blog/wp-content/uploads/2017/12/prime-minister-bangladesh-vr.jpg" },
+        { "caption": "VR Project Page", "url": "https://riseuplabs.com/blog/wp-content/uploads/2018/03/20180315_154022_3.gif" },
+        { "caption": "VR Project Page", "url": "https://riseuplabs.com/blog/wp-content/uploads/2018/03/20180315_154022_1.gif" },
+        { "caption": "VR Project Page", "url": "https://riseuplabs.com/blog/wp-content/uploads/2018/03/20180315_170132_1.gif" },
+        { "caption": "VR Project Page", "url": "https://riseuplabs.com/blog/wp-content/uploads/2018/03/20180315_170132_2.gif" }
+      ],
+      "codeSnippet": "// Unreal Engine (C++): Triggering the speech audio on player proximity\nvoid ASceneTrigger::OnOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, ...) {\n    if (OtherActor->IsA(APlayerCharacter::StaticClass())) {\n        USoundCue* SpeechCue;\n        UGameplayStatics::PlaySoundAtLocation(GetWorld(), SpeechCue, GetActorLocation());\n    }\n}",
+      "architecture": "Standalone VR Application (Unreal Engine). Focus: Asset loading, spatial audio, and motion tracking logic.",
+      "links": {
+        "live": "https://riseuplabs.com/blog/7th-march-speech-in-vr/",
+        "github": ""
+      },
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": "14",
+      "name": "Roller Coaster (VR)",
+      "description": "Virtual Reality roller coaster experience.",
+      "techStack": ["Unity3D", "Maya", "Max", "Motionbuilder", "Perception Neuron"],
+      "highlights": ["Developed an interactive and immersive Virtual Reality entertainment application."],
+      "duration": "Jan 2019 - Jun 2019",
+      "role": "Project Manager and Team Lead",
+      "metrics": {},
+      "screenshots": [],
+      "codeSnippet": "// C# (Unity): Roller coaster movement along a path\nprivate void FixedUpdate() {\n    currentDistance += speed * Time.fixedDeltaTime;\n    transform.position = path.GetPoint(currentDistance);\n    transform.rotation = path.GetRotation(currentDistance);\n}",
+      "architecture": "Standalone VR Application (Unity3D). Focus: Physics simulation, frame rate optimization, and asset rendering.",
+      "links": {
+        "live": "",
+        "github": ""
+      },
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": "15",
+      "name": "QStatus (web)",
+      "description": "Web application version of QStatus.",
+      "techStack": ["ExpressJs", "GraphQL", "MongoDB", "VueJs"],
+      "highlights": ["Built a modern web application using a fast Node.js backend (ExpressJS) and a flexible data layer (GraphQL and MongoDB)."],
+      "duration": "Jan 2019 - Jun 2019",
+      "role": "Project Manager and Team Lead",
+      "metrics": {},
+      "screenshots": [],
+      "codeSnippet": "// GraphQL Resolver for fetching a user's status\nconst resolvers = {\n  Query: {\n    userStatus: async (_, { userId }) => {\n      return await Status.find({ user: userId });\n    },\n  },\n};",
+      "architecture": "Client (VueJS) <--> API Gateway (ExpressJS/GraphQL) <--> Database (MongoDB). Data is fetched efficiently using GraphQL queries.",
+      "links": {
+        "live": "",
+        "github": ""
+      },
+      "image": "/placeholder.svg"
     }
   ]
 }

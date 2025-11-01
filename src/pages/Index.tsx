@@ -17,7 +17,7 @@ const Index = () => {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    const hasSeenBoot = localStorage.getItem("hasSeenBoot");
+    const hasSeenBoot = false; // localStorage.getItem("hasSeenBoot");
     if (!hasSeenBoot) {
       setShowBoot(true);
       localStorage.setItem("hasSeenBoot", "true");

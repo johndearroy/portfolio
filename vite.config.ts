@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => ({
     mode === "development" && componentTagger(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.ico", "profile.jpg", "icon-192.png", "icon-512.png"],
+      includeAssets: ["favicon.ico", "profile.jpg", "icon-192.png", "icon-512.png", "apple-touch-icon.png"],
       manifest: {
         name: "Senior Software Engineer Portfolio",
         short_name: "Portfolio",
@@ -39,6 +39,8 @@ export default defineConfig(({ mode }) => ({
         ],
       },
       workbox: {
+        navigateFallback: '/portfolio/index.html',
+        cleanupOutdatedCaches: true,
         globPatterns: ["**/*.{js,css,html,ico,png,jpg,svg}"],
         runtimeCaching: [
           {

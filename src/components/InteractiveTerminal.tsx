@@ -56,9 +56,9 @@ export const InteractiveTerminal = () => {
       "Passionate about building scalable, high-performance applications",
     ],
     skills: [
-      "Frontend: React, TypeScript, Next.js, Tailwind CSS",
-      "Backend: Node.js, Python, Java, Go",
-      "Database: PostgreSQL, MongoDB, Redis",
+      "Frontend: React, Vue, TypeScript, Next.js, Tailwind CSS",
+      "Backend: PHP, Node.js, Python, Go",
+      "Database: MySQL, MongoDB, Redis, PostgreSQL",
       "Cloud: AWS, Docker, Kubernetes",
       "Navigating to skills section...",
     ],
