@@ -10,6 +10,7 @@ import { ScrollProgress } from "@/components/ScrollProgress";
 import { PerformanceMetrics } from "@/components/PerformanceMetrics";
 import { Terminal, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profileData from "@/data/profile.json";
 
 const Index = () => {
   const [showBoot, setShowBoot] = useState(false);
@@ -62,7 +63,7 @@ const Index = () => {
                 <span className="text-primary/60">$</span>
                 <span className="code-text">whoami</span>
               </div>
-              <div className="ml-4 text-foreground">Senior Software Engineer</div>
+              <div className="ml-4 text-foreground">{profileData.title}</div>
               
               <div className="flex gap-2 mt-4">
                 <span className="text-primary/60">$</span>

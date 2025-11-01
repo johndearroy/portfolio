@@ -1,13 +1,13 @@
 import { Card } from "@/components/ui/card";
-import { Terminal, Calendar, MapPin, ChevronRight } from "lucide-react";
+import { Terminal, Calendar, MapPin, ChevronRight, TrendingUp } from "lucide-react";
 import experienceData from "@/data/experience.json";
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-32 px-4 relative">
+    <section id="experience" className="py-16 px-4 relative">
       <div className="container mx-auto max-w-7xl relative z-10">
         {/* Section Header */}
-        <div className="sticky top-0 z-20 bg-background/60 backdrop-blur-xl py-8 -mt-8 border-b border-primary/10 mb-20">
+        <div className="sticky top-10 z-20 bg-background/60 backdrop-blur-xl py-8 -mt-8 border-b border-primary/10 mb-20">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Terminal className="h-6 w-6 text-primary" />
             <span className="code-text text-primary text-sm">$ git log --work-experience</span>
@@ -57,7 +57,9 @@ export const Experience = () => {
                     </div>
                     <div className="flex items-center gap-2">
                       <Calendar className="h-4 w-4 text-primary" />
-                      <span className="code-text">{position.startDate} - {position.endDate}</span>
+                      <span className="code-text">{position.startDate}</span>
+                      <TrendingUp className="h-4 w-4 text-primary" />
+                      <span className="code-text">{position.endDate}</span>
                     </div>
                   </div>
                 </div>
@@ -68,7 +70,7 @@ export const Experience = () => {
                   {position.achievements.map((achievement, i) => (
                     <div key={i} className="flex gap-3 items-start group/item">
                       <ChevronRight className="h-4 w-4 text-primary flex-shrink-0 mt-0.5 group-hover/item:translate-x-1 transition-transform" />
-                      <span className="text-foreground/90 leading-relaxed text-sm">
+                      <span className="text-foreground/90 leading-relaxed text-xs">
                         {achievement}
                       </span>
                     </div>

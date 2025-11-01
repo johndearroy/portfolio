@@ -2,119 +2,167 @@
   "projects": [
     {
       "id": "1",
-      "name": "E-Commerce Platform",
-      "description": "Built a scalable e-commerce platform handling 100K+ daily active users with real-time inventory management and payment processing.",
-      "techStack": ["React", "Node.js", "PostgreSQL", "Redis", "AWS", "Stripe"],
+      "name": "PipeX CRM",
+      "description": "PipeX CRM – A simple application that can help you to improve customer relationship to grow your business more efficiently. You can manage your company’s associations in a friendly interface and with a low learning curve.",
+      "techStack": ["Laravel", "Vue", "MySQL", "Redis", "Bootstrap", "Stripe"],
       "highlights": [
         "Implemented microservices architecture for better scalability",
         "Reduced page load time by 70% through optimization",
-        "Integrated AI-powered product recommendations"
+        "A awesome pipeline based architecture for lead generation implenemented"
       ],
-      "duration": "Jan 2022 - Dec 2023",
-      "role": "Lead Full-Stack Engineer",
+      "duration": "Feb 2020 - Jul 2020",
+      "role": "Senior Software Engineer",
       "metrics": {
-        "users": "100K+",
+        "users": "25K+",
         "performance": "98/100",
-        "team": "8 members",
+        "team": "4 members",
         "loadTime": "0.9s"
       },
       "screenshots": [
-        { "caption": "Product Catalog" },
-        { "caption": "Checkout Flow" }
+        { "caption": "Activity list", "url": "https://s3.envato.com/files/376085763/Activity%20List%20view.png" },
+        { "caption": "Calendar view", "url": "https://s3.envato.com/files/376085763/Calander.png" },
+        { "caption": "Dashboard", "url": "https://s3.envato.com/files/376085763/Dasboard%20-%20light.png" },
+        { "caption": "All pipeline", "url": "https://s3.envato.com/files/376085763/Deals%20Card%20view.png" }
       ],
       "codeSnippet": "// Payment processing pipeline\nconst processPayment = async (order) => {\n  await validateOrder(order);\n  const payment = await stripe.charge({\n    amount: order.total,\n    currency: 'usd'\n  });\n  await updateInventory(order.items);\n  return payment;\n};",
-      "architecture": "┌──────────┐     ┌──────────┐\n│  Client  │────▶│    CDN   │\n└──────────┘     └────┬─────┘\n                      │\n              ┌───────▼────────┐\n              │  API Gateway   │\n              └───────┬────────┘\n                      │\n         ┌────────────┼────────────┐\n         │            │            │\n    ┌────▼───┐   ┌───▼────┐  ┌───▼────┐\n    │Payment │   │Inventory│  │ Orders │\n    │Service │   │ Service │  │Service │\n    └────────┘   └────────┘  └────────┘",
+      "architecture": "┌──────────┐     ┌──────────┐\n│  Client  │────▶│    CDN   │\n└──────────┘     └────┬─────┘\n                      │\n              ┌───────▼────────┐\n              │  API Gateway   │\n              └───────┬────────┘\n                      │\n         ┌────────────┼────────────┐\n         │            │            │\n    ┌────▼───┐   ┌───▼──────┐  ┌───▼──────┐\n    │Payment │   │Inventory │  │ Orders   │\n    │Service │   │ Service  │  │Service   │\n    └────────┘   └──────────┘  └──────────┘",
       "links": {
-        "live": "https://example.com",
-        "github": "https://github.com/example/ecommerce"
+        "live": "https://pipex.gainhq.com/admin/users/login",
+        "github": ""
       },
       "image": "/placeholder.svg"
     },
     {
       "id": "2",
-      "name": "Real-Time Analytics Dashboard",
-      "description": "Developed a real-time analytics platform processing millions of events per day with interactive visualizations.",
-      "techStack": ["React", "TypeScript", "Python", "Apache Kafka", "ClickHouse", "Docker"],
-      "highlights": [
-        "Built ETL pipeline processing 5M+ events daily",
-        "Created custom data visualization library",
-        "Achieved sub-second query response times"
-      ],
-      "duration": "Mar 2021 - Dec 2021",
-      "role": "Senior Frontend Engineer",
+      "name": "Mailer",
+      "description": "Mailer – Email Marketing Application is the easiest way to send email marketing newsletters! Create your brands, add campaigns and monitor progression. Mailer has powerful features to create dynamic lists using different segments. Stop wasting monthly subscription fees and make your newsletter marketing more professional.",
+      "techStack": ["Laravel", "Vue", "MySQL", "Redis", "Bootstrap", "Stripe"],
+      "highlights": ["Implemented core email marketing features like automation workflows and campaign management.", "Enabled unlimited email sends and powerful automation."],
+      "duration": "Jul 2020 - Oct 2020",
+      "role": "Senior Software Engineer",
       "metrics": {
-        "users": "50K+",
-        "performance": "95/100",
-        "team": "5 members",
-        "loadTime": "1.2s"
+        "users": "25K+",
+        "performance": "98/100",
+        "team": "4 members",
+        "loadTime": "0.9s"
       },
       "screenshots": [
-        { "caption": "Dashboard Overview" },
-        { "caption": "Real-time Metrics" }
+        { "caption": "Dashboard", "url": "https://s3.envato.com/files/401635874/Screenshots/15.png" },
+        { "caption": "Edit campaign", "url": "https://s3.envato.com/files/401635874/Screenshots/1.png" },
+        { "caption": "Subscribers list", "url": "https://s3.envato.com/files/401635874/Screenshots/11.png" },
+        { "caption": "User management", "url": "https://s3.envato.com/files/401635874/Screenshots/12.png" },
+        { "caption": "Logic builder", "url": "https://s3.envato.com/files/401635874/Screenshots/5.png" }
       ],
-      "codeSnippet": "// Real-time event processing\nconst processEvent = async (event) => {\n  const validated = await validate(event);\n  await kafka.produce({\n    topic: 'events',\n    message: validated\n  });\n  return analytics.track(validated);\n};",
-      "architecture": "┌─────────────┐\n│   Client    │\n└──────┬──────┘\n       │\n┌──────▼──────┐\n│ API Gateway │\n└──────┬──────┘\n       │\n┌──────▼──────┐\n│    Kafka    │\n└──────┬──────┘\n       │\n┌──────▼──────┐\n│ ClickHouse  │\n└─────────────┘",
+      "codeSnippet": "// Laravel Queue for background email sending\nMail::to($subscriber->email)\n    ->send(new CampaignEmail($campaign))\n    ->onQueue('emails');\n\n// VueJS: Campaign creation flow\nconst createCampaign = (payload) => {\n    axios.post('/api/campaigns', payload);\n};",
+      "architecture": "Frontend (VueJS) <--> Web Server (Laravel) <--> MySQL DB | Background: Laravel Queue Workers (Redis/SQS) for high-volume email processing.",
       "links": {
-        "live": "https://analytics-demo.com",
-        "github": "https://github.com/example/analytics"
+        "live": "https://mailer.gainhq.com/admin/users/login",
+        "github": ""
       },
       "image": "/placeholder.svg"
     },
     {
       "id": "3",
-      "name": "DevOps Automation Suite",
-      "description": "Created comprehensive DevOps toolkit automating infrastructure provisioning and deployment processes.",
-      "techStack": ["Terraform", "Kubernetes", "Go", "Jenkins", "AWS", "Prometheus"],
-      "highlights": [
-        "Reduced deployment time by 80%",
-        "Automated infrastructure provisioning for 50+ services",
-        "Implemented zero-downtime deployment strategy"
-      ],
-      "duration": "Jun 2020 - Feb 2021",
-      "role": "DevOps Engineer",
+      "name": "Unite Living",
+      "description": "Project details are confidential according to company policy. Implemented a complex, large-scale distributed system.",
+      "techStack": ["MeteorJs", "MongoDB", "VueJs", "Lambda", "SQS", "S3", "ECR", "Puppeteer", "GraphQL", "ExpressJs", "Mocha", "Chai"],
+      "highlights": ["Developed a large-scale, distributed system using AWS serverless components (Lambda, SQS, S3)."],
+      "duration": "Jul 2020 - Mar 2021",
+      "role": "Senior Software Engineer",
       "metrics": {
-        "users": "50+ services",
-        "performance": "99/100",
-        "team": "3 members",
-        "loadTime": "N/A"
+        "users": "25K+",
+        "performance": "98/100",
+        "team": "4 members",
+        "loadTime": "0.9s"
       },
-      "screenshots": [
-        { "caption": "Infrastructure Dashboard" },
-        { "caption": "Deployment Pipeline" }
-      ],
-      "codeSnippet": "// Infrastructure as Code\nresource \"aws_instance\" \"app\" {\n  ami           = var.ami_id\n  instance_type = \"t3.medium\"\n  \n  tags = {\n    Name = \"app-server\"\n    Env  = terraform.workspace\n  }\n}",
-      "architecture": "┌──────────┐\n│   Git    │\n└────┬─────┘\n     │\n┌────▼─────┐\n│ Jenkins  │\n└────┬─────┘\n     │\n┌────▼─────┐\n│Terraform │\n└────┬─────┘\n     │\n┌────▼─────┐\n│   AWS    │\n└──────────┘",
+      "screenshots": [{ "caption": "Unite Living Public Page", "url": "https://i.ibb.co.com/gLx78G8T/uniteliving.png" }],
+      "codeSnippet": "// Node.js Lambda handler for microservice\nexports.handler = async (event) => {\n  const records = event.Records.map(r => JSON.parse(r.body));\n  // Process SQS message for apartment sync\n  console.log('Processing ' + records.length + ' records');\n  return { statusCode: 200, body: 'Processed' };\n};",
+      "architecture": "Client (Vue/Meteor) <--> GraphQL API (ExpressJS) <--> MongoDB | Backend: Event-Driven Serverless (AWS SQS/Lambda/S3) for distributed processing.",
       "links": {
-        "github": "https://github.com/example/devops-suite"
+        "live": "https://www.uniteliving.no/find-home",
+        "github": ""
       },
       "image": "/placeholder.svg"
     },
     {
       "id": "4",
-      "name": "Mobile-First SaaS Application",
-      "description": "Led development of a mobile-first SaaS platform with offline-first architecture and real-time synchronization.",
-      "techStack": ["React Native", "Node.js", "MongoDB", "GraphQL", "Redis", "WebSocket"],
-      "highlights": [
-        "Built offline-first architecture with conflict resolution",
-        "Achieved 4.8+ app store rating",
-        "Scaled to 50K+ active users in first 6 months"
-      ],
-      "duration": "Jan 2019 - May 2020",
-      "role": "Technical Lead",
-      "metrics": {
-        "users": "50K+",
-        "performance": "4.8★",
-        "team": "6 members",
-        "loadTime": "1.5s"
-      },
-      "screenshots": [
-        { "caption": "Mobile Interface" },
-        { "caption": "Sync Dashboard" }
-      ],
-      "codeSnippet": "// Offline-first sync\nconst syncData = async () => {\n  const local = await db.getChanges();\n  const conflicts = await api.sync(local);\n  \n  if (conflicts.length) {\n    return resolveConflicts(conflicts);\n  }\n  return { success: true };\n};",
-      "architecture": "┌──────────┐\n│  Mobile  │\n└────┬─────┘\n     │\n┌────▼─────┐\n│Local DB  │\n└────┬─────┘\n     │\n┌────▼─────┐\n│WebSocket │\n└────┬─────┘\n     │\n┌────▼─────┐\n│ Backend  │\n└──────────┘",
+      "name": "Digital Bondhu",
+      "description": "A job platform similar to BDJobs.",
+      "techStack": ["Laravel", "MySQL"],
+      "highlights": ["Built core job platform functionalities including job listings, searching, and user profiles."],
+      "duration": "Jan 2019 - Jun 2019",
+      "role": "Project Manager and Team Lead",
+      "metrics": {},
+      "screenshots": [],
+      "codeSnippet": "// Laravel Scope for searching jobs\npublic function scopeSearch(Builder $query, string $term): Builder\n{\n    return $query->where('title', 'LIKE', \"%$term%\")\n                 ->orWhere('company', 'LIKE', \"%$term%\");\n}",
+      "architecture": "Standard LAMP/LEMP Stack: Frontend (Blade/Vue) <--> API (Laravel) <--> Database (MySQL).",
       "links": {
-        "live": "https://saas-app.com"
+        "live": "",
+        "github": ""
+      },
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": "5",
+      "name": "Treasure Wars - MMORPG Game",
+      "description": "MMORPG Game development using C# and Unity3D.",
+      "techStack": ["Laravel", "MySQL", "C#", "Unity3D"],
+      "highlights": ["Developed game logic and backend services for a massively multiplayer online role-playing game (MMORPG)."],
+      "duration": "Jan 2018 - Dec 2018",
+      "role": "Project Manager and Team Lead",
+      "metrics": {},
+      "screenshots": [
+        { "caption": "Treasure Wars Game Page", "url": "https://riseuplabs.com/wp-content/uploads/2020/11/game-modes-of-treasure-wars.jpg" },
+        { "caption": "Treasure Wars Game Page", "url": "https://riseuplabs.com/wp-content/uploads/2020/11/the-gameplay-room-treasure-wars.jpg" },
+        { "caption": "Treasure Wars Game Page", "url": "https://riseuplabs.com/wp-content/uploads/2020/11/keep-treasure-till-the-last-moment.jpeg" }
+      ],
+      "codeSnippet": "// C# (Unity): Player movement and health logic\npublic class Player : MonoBehaviour {\n    public int health = 100;\n    private void Update() {\n        float move = Input.GetAxis(\"Horizontal\") * Time.deltaTime;\n        transform.Translate(move, 0, 0);\n    }\n}",
+      "architecture": "Client (Unity/C#) <--> Game Server (Custom/Node/PHP) <--> DB (MySQL). Focus on low-latency communication.",
+      "links": {
+        "live": "https://riseuplabs.com/treasure-wars/",
+        "github": ""
+      },
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": "6",
+      "name": "Meena Media Award",
+      "description": "System for managing the Meena Media Award for Unicef Bangladesh.",
+      "techStack": ["Laravel", "MySQL"],
+      "highlights": ["Implemented a system for managing award submissions and the judging process."],
+      "duration": "Jan 2019 - Jun 2019",
+      "role": "Project Manager and Team Lead",
+      "metrics": {},
+      "screenshots": [
+        { "caption": "Meena Media Award Page", "url": "https://riseuplabs.com/wp-content/uploads/2020/11/meena-media-awards-website-home-page.jpeg" },
+        { "caption": "Meena Media Award Page", "url": "https://riseuplabs.com/wp-content/uploads/2020/11/meena-media-awards-applications-dashboard.jpeg" }
+      ],
+      "codeSnippet": "// Laravel: Submissions and judging model relationship\nclass Submission extends Model {\n    public function judges() {\n        return $this->belongsToMany(User::class, 'judge_scores')\n                    ->withPivot('score');\n    }\n}",
+      "architecture": "Web App (Laravel) <--> MySQL DB. Features: Multi-user roles (Submitter, Judge, Admin) and secure data handling.",
+      "links": {
+        "live": "https://riseuplabs.com/meena-media-awards/",
+        "github": ""
+      },
+      "image": "/placeholder.svg"
+    },
+    {
+      "id": "7",
+      "name": "Adolescent",
+      "description": "Web application project for Unicef Bangladesh focused on adolescent issues.",
+      "techStack": ["Laravel", "MySQL"],
+      "highlights": ["Developed a web application for a social awareness or resource distribution project."],
+      "duration": "Jan 2019 - Jun 2019",
+      "role": "Project Manager and Team Lead",
+      "metrics": {},
+      "screenshots": [
+        { "caption": "Adolescent Platform Page", "url": "https://riseuplabs.com/wp-content/uploads/2020/11/digital-platform-for-adolescent-userinterface-view.jpg" },
+        { "caption": "Adolescent Platform Page", "url": "https://riseuplabs.com/wp-content/uploads/2020/11/digital-platform-for-adolescent-mobileapp-view.jpg" }
+      ],
+      "codeSnippet": "// Laravel Middleware for age-gate/access control\npublic function handle($request, Closure $next)\n{\n    if (Auth::user()->age < 13) {\n        return redirect('/parental-consent');\n    }\n    return $next($request);\n}",
+      "architecture": "Web App (Laravel) <--> MySQL DB. Focus on user engagement, content delivery, and access control.",
+      "links": {
+        "live": "https://riseuplabs.com/digital-platform-for-adolescent/",
+        "github": ""
       },
       "image": "/placeholder.svg"
     }

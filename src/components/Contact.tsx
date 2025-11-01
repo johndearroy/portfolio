@@ -5,10 +5,10 @@ import profileData from "@/data/profile.json";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-32 px-4 relative">
+    <section id="contact" className="py-16 px-4 relative">
       <div className="container mx-auto max-w-4xl relative z-10">
         {/* Section Header */}
-        <div className="sticky top-0 z-20 bg-background/60 backdrop-blur-xl py-8 -mt-8 border-b border-primary/10 mb-16">
+        <div className="sticky top-10 z-20 bg-background/60 backdrop-blur-xl py-8 -mt-8 border-b border-primary/10 mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Terminal className="h-6 w-6 text-primary" />
             <span className="code-text text-primary text-sm">$ contact --init</span>
@@ -37,26 +37,33 @@ export const Contact = () => {
           <div className="space-y-8">
             {/* Email Section */}
             <div className="space-y-4">
-              <div className="flex items-center gap-2 mb-4">
-                <Mail className="h-5 w-5 text-primary" />
-                <span className="code-text text-sm text-primary">emailAddress:</span>
+              <div className="flex">
+                <div>
+                  <div className="flex items-center gap-2 mb-4">
+                    <Mail className="h-5 w-5 text-primary" />
+                    <span className="code-text text-sm text-primary">emailAddress:</span>
+                  </div>
+                  <a
+                    href={`mailto:${profileData.email}`}
+                    className="code-text text-2xl md:text-3xl font-bold text-gradient hover:opacity-80 transition-opacity block"
+                  >
+                    {profileData.email}
+                  </a>
+                  <Button
+                    size="lg"
+                    className="terminal-border bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 group mt-4"
+                    asChild
+                  >
+                    <a href={`mailto:${profileData.email}`}>
+                      <span className="code-text">$ send_message</span>
+                      <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    </a>
+                  </Button>
+                </div>
+                <div className="mx-5 my-8">
+                  <img src="profile.png" alt="" className="w-1/2 float-end rounded-full hidden" />
+                </div>
               </div>
-              <a
-                href={`mailto:${profileData.email}`}
-                className="code-text text-2xl md:text-3xl font-bold text-gradient hover:opacity-80 transition-opacity block"
-              >
-                {profileData.email}
-              </a>
-              <Button
-                size="lg"
-                className="terminal-border bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 group mt-4"
-                asChild
-              >
-                <a href={`mailto:${profileData.email}`}>
-                  <span className="code-text">$ send_message</span>
-                  <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </Button>
             </div>
 
             {/* Divider */}

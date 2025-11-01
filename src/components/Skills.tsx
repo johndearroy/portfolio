@@ -7,15 +7,16 @@ import { ContributionGraph } from "@/components/ContributionGraph";
 const categoryIcons = {
   "Backend": Server,
   "Frontend": Code2,
-  "DevOps & Cloud": Cloud
+  "DevOps & Cloud": Cloud,
+  "Frameworks & Libraries": Terminal
 };
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-32 px-4 relative">
+    <section id="skills" className="py-16 px-4 relative">
       <div className="container mx-auto max-w-7xl relative z-10">
         {/* Section Header */}
-        <div className="sticky top-0 z-20 bg-background/60 backdrop-blur-xl py-8 -mt-8 border-b border-primary/10 mb-20">
+        <div className="sticky top-10 z-20 bg-background/60 backdrop-blur-xl py-8 -mt-8 border-b border-primary/10 mb-20">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Terminal className="h-6 w-6 text-primary" />
             <span className="code-text text-primary text-sm">$ cat skills.json</span>
@@ -28,20 +29,8 @@ export const Skills = () => {
           </p>
         </div>
 
-        {/* Contribution Graph */}
-        <div className="mb-16 max-w-5xl mx-auto">
-          <Card className="terminal-card p-6">
-            <div className="flex items-center gap-2 mb-4">
-              <Terminal className="h-5 w-5 text-primary" />
-              <h3 className="code-text text-lg font-semibold">$ git log --graph --all</h3>
-            </div>
-            <p className="text-sm text-muted-foreground mb-6">// Contribution activity over the past year</p>
-            <ContributionGraph />
-          </Card>
-        </div>
-
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillsData.categories.map((category, idx) => {
             const IconComponent = categoryIcons[category.name as keyof typeof categoryIcons] || Terminal;
             
@@ -72,12 +61,17 @@ export const Skills = () => {
                         animation: 'slideLeft 0.6s ease-out forwards'
                       }}
                     >
-                      <div className="flex items-center gap-2">
-                        <span className="code-text text-primary text-xs">{">"}</span>
-                        <span className="code-text text-sm">{skill.name}</span>
+                      <div className="flex flex-col items-start">
+                        <div className="flex items-center gap-2">
+                          <span className="code-text text-primary text-xs">{">"}</span>
+                          <span className="code-text text-sm">{skill.name}</span>
+                        </div>
+                        {/* <p className="code-text text-xs bg-primary/10 text-primary px-2 py-[2px] rounded-full mt-1">
+                          {skill.level}
+                        </p> */}
                       </div>
                       <Badge variant="outline" className="code-text text-[10px] border-primary/20 text-primary/60">
-                        {Math.floor(Math.random() * 5) + 3}y
+                        {skill.year}y
                       </Badge>
                     </div>
                   ))}
@@ -85,6 +79,18 @@ export const Skills = () => {
               </Card>
             );
           })}
+        </div>
+
+        {/* Contribution Graph */}
+        <div className="mt-16 max-w-7xl mx-auto">
+          <Card className="terminal-card p-6">
+            <div className="flex items-center gap-2 mb-4">
+              <Terminal className="h-5 w-5 text-primary" />
+              <h3 className="code-text text-lg font-semibold">$ git log --graph --all</h3>
+            </div>
+            <p className="text-sm text-muted-foreground mb-6">// Contribution activity over the past year</p>
+            <ContributionGraph />
+          </Card>
         </div>
       </div>
     </section>

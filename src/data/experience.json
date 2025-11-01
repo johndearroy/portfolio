@@ -2,38 +2,63 @@
   "positions": [
     {
       "title": "Senior Software Engineer",
-      "company": "Tech Company Inc.",
+      "company": "Binate Solutions Ltd.",
       "location": "Remote",
-      "startDate": "2021-01",
+      "startDate": "2021-06",
       "endDate": "Present",
       "achievements": [
-        "Led development of microservices architecture serving 5M+ users, reducing API response time by 60%",
-        "Architected and implemented real-time data pipeline processing 1TB+ daily using Apache Kafka",
-        "Mentored team of 5 junior engineers and established best practices for code review and deployment"
+        "Led client communication and analyzed requirements for 10+ projects, resulting in a 95% on-time project completion rate.",
+        "Streamlined the software release process by implementing CI/CD pipelines (using tools like CircleCI/Docker), cutting deployment time by 50%.",
+        "Mentored and managed a team of 4 junior developers by conducting code reviews, which reduced production bugs by 30%"
       ]
     },
     {
-      "title": "Software Engineer",
-      "company": "Innovation Labs",
-      "location": "San Francisco, CA",
-      "startDate": "2018-06",
-      "endDate": "2020-12",
+      "title": "Senior Software Engineer",
+      "company": "Gain Solutions",
+      "location": "DOHS, Mirpur, Dhaka",
+      "startDate": "2020-02",
+      "endDate": "2021-03",
       "achievements": [
         "Built and scaled RESTful APIs handling 10K+ requests per second using Node.js and Redis caching",
         "Implemented automated CI/CD pipeline reducing deployment time from 2 hours to 15 minutes",
-        "Optimized database queries resulting in 45% improvement in application performance"
+        "Optimized database queries resulting in 45% improvement in application performance",
+        "Identified and documented 200+ critical bugs over 16 months, significantly improving the UX and stability of product releases."
       ]
     },
     {
-      "title": "Full Stack Developer",
-      "company": "Digital Solutions Co.",
-      "location": "New York, NY",
-      "startDate": "2016-03",
-      "endDate": "2018-05",
+      "title": "Project Manager and Team Lead",
+      "company": "Riseup Labs",
+      "location": "Uttara, Dhaka",
+      "startDate": "2018-11",
+      "endDate": "2020-02",
       "achievements": [
-        "Developed responsive web applications using React, Redux, and modern JavaScript ES6+",
-        "Integrated third-party APIs and payment gateways (Stripe, PayPal) processing $2M+ in transactions",
-        "Collaborated with UX team to improve user engagement metrics by 35%"
+        "Served as the primary bridge between Product, Engineering, and Creative teams, ensuring effective collaboration and seamless execution of project goals.",
+        "Reviewed and validated code for functionality, accuracy, and compliance with project standards.",
+        "Developed and executed design, development, and release plans, ensuring timely and high-quality deliverables."
+      ]
+    },
+    {
+      "title": "Quality Assurance Tester",
+      "company": "Riseup Labs",
+      "location": "Uttara, Dhaka",
+      "startDate": "2017-07",
+      "endDate": "2018-11",
+      "achievements": [
+        "Designed and executed comprehensive test plans, scenarios, and test cases to ensure software functionality, performance, and reliability across multiple platforms.",
+        "Collaborated closely with developers and product managers to communicate test findings, provide actionable feedback, and enhance overall user experience (UX).",
+        "Verified and validated fixes, performing regression and exploratory testing to maintain product stability throughout release cycles."
+      ]
+    },
+    {
+      "title": "Full stack developer (Contractual)",
+      "company": "Backbone IT Ltd",
+      "location": "Sirajganj",
+      "startDate": "2014-05",
+      "endDate": "2015-12",
+      "achievements": [
+        "Designed and developed responsive, high-performance web applications using PHP, MySQL, CodeIgniter, and WordPress, ensuring smooth functionality and scalability.",
+        "Translated PSD designs into pixel-perfect, responsive HTML/CSS layouts leveraging Bootstrap for modern UI/UX experiences.",
+        "Developed and integrated RESTful APIs to connect server-side logic with client-facing interfaces."
       ]
     }
   ]

@@ -3,39 +3,57 @@
     {
       "name": "Backend",
       "skills": [
-        { "name": "Node.js", "icon": "Server" },
-        { "name": "Python", "icon": "Code2" },
-        { "name": "Java", "icon": "Coffee" },
-        { "name": "Go", "icon": "Zap" },
-        { "name": "PostgreSQL", "icon": "Database" },
-        { "name": "MongoDB", "icon": "Database" },
-        { "name": "Redis", "icon": "Layers" },
-        { "name": "GraphQL", "icon": "Network" }
+        { "name": "Node.js", "icon": "Server", "year": 3, "level": "Expert" },
+        { "name": "Python", "icon": "Code2", "year": 0.5, "level": "Expert" },
+        { "name": "Php", "icon": "Coffee", "year": 10, "level": "Expert" },
+        { "name": "Go", "icon": "Zap", "year": 0.5, "level": "Expert" },
+        { "name": "MySQL", "icon": "Database", "year": 10, "level": "Expert" },
+        { "name": "PostgreSQL", "icon": "Database", "year": 5, "level": "Expert" },
+        { "name": "MongoDB", "icon": "Database", "year": 5, "level": "Expert" },
+        { "name": "Redis", "icon": "Layers", "year": 5, "level": "Expert" },
+        { "name": "GraphQL", "icon": "Network", "year": 1, "level": "Expert" }
       ]
     },
     {
       "name": "Frontend",
       "skills": [
-        { "name": "React", "icon": "Atom" },
-        { "name": "TypeScript", "icon": "FileCode" },
-        { "name": "Next.js", "icon": "Layout" },
-        { "name": "Vue.js", "icon": "Component" },
-        { "name": "Tailwind CSS", "icon": "Palette" },
-        { "name": "Redux", "icon": "Box" },
-        { "name": "WebSocket", "icon": "Radio" }
+        { "name": "React", "icon": "Atom", "year": 5, "level": "Expert" },
+        { "name": "TypeScript", "icon": "FileCode", "year": 2, "level": "Expert" },
+        { "name": "JavaScript", "icon": "FileCode", "year": 7, "level": "Expert" },
+        { "name": "Vue.js", "icon": "Component", "year": 2, "level": "Expert" },
+        { "name": "HTML5", "icon": "Html5", "year": 10, "level": "Expert" },
+        { "name": "CSS3", "icon": "Css3", "year": 10, "level": "Expert" },
+        { "name": "Tailwind CSS", "icon": "Palette", "year": 3, "level": "Expert" },
+        { "name": "Redux", "icon": "Box", "year": 5, "level": "Expert" },
+        { "name": "WebSocket", "icon": "Radio", "year": 5, "level": "Expert" }
       ]
     },
     {
       "name": "DevOps & Cloud",
       "skills": [
-        { "name": "AWS", "icon": "Cloud" },
-        { "name": "Docker", "icon": "Package" },
-        { "name": "Kubernetes", "icon": "Boxes" },
-        { "name": "CI/CD", "icon": "GitBranch" },
-        { "name": "Terraform", "icon": "Settings" },
-        { "name": "Jenkins", "icon": "Workflow" },
-        { "name": "Nginx", "icon": "Server" },
-        { "name": "Linux", "icon": "Terminal" }
+        { "name": "AWS", "icon": "Cloud", "year": 4, "level": "Expert" },
+        { "name": "Azure", "icon": "Cloud", "year": 1, "level": "Expert" },
+        { "name": "Docker", "icon": "Package", "year": 5, "level": "Expert" },
+        { "name": "Kubernetes", "icon": "Boxes", "year": 2, "level": "Expert" },
+        { "name": "CI/CD", "icon": "GitBranch", "year": 6, "level": "Expert" },
+        { "name": "Graph API", "icon": "Settings", "year": 1, "level": "Expert" },
+        { "name": "Jenkins", "icon": "Workflow", "year": 1, "level": "Expert" },
+        { "name": "Nginx", "icon": "Server", "year": 1, "level": "Expert" },
+        { "name": "Linux", "icon": "Terminal", "year": 5, "level": "Expert" }
+      ]
+    },
+    {
+      "name": "Frameworks & Libraries",
+      "skills": [
+        { "name": "Laravel", "icon": "Cloud", "year": 8, "level": "Expert" },
+        { "name": "NextJs", "icon": "Package", "year": 5, "level": "Expert" },
+        { "name": "NestJs", "icon": "Boxes", "year": 2, "level": "Expert" },
+        { "name": "dJango", "icon": "GitBranch", "year": 1, "level": "Expert" },
+        { "name": "Express.js", "icon": "Workflow", "year": 2, "level": "Expert" },
+        { "name": "Symfony", "icon": "Settings", "year": 2, "level": "Expert" },
+        { "name": "React Native", "icon": "Layout", "year": 1, "level": "Expert" },
+        { "name": "Flutter", "icon": "Layout", "year": 1, "level": "Expert" },
+        { "name": "Puppiteer", "icon": "Workflow", "year": 2, "level": "Expert" }
       ]
     }
   ]

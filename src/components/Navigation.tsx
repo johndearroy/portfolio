@@ -37,7 +37,7 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav className={`fixed top-12 left-0 right-0 z-[90] transition-all duration-300 ${
+    <nav className={`fixed top-8 left-0 right-0 z-[90] transition-all duration-300 ${
       isScrolled 
         ? 'bg-background/80 backdrop-blur-xl border-b border-border shadow-lg' 
         : 'bg-transparent'
@@ -51,7 +51,7 @@ export const Navigation = () => {
           >
             <Terminal className="h-6 w-6 text-primary group-hover:rotate-12 transition-transform" />
             <span className="code-text text-xl font-bold">
-              <span className="text-primary">$</span> dev.portfolio
+              <span className="text-primary">$</span> roy.portfolio
             </span>
           </button>
 
